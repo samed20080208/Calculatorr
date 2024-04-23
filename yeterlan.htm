@@ -1,0 +1,1863 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial</title>
+<base href="https://www.codewithfaraz.com/content.php">
+<meta name="description" content="Learn how to create a tasty CSS-animated hamburger menu for responsive web design. Follow our step-by-step tutorial using HTML, CSS, and JavaScript.
+
+" />
+<link rel="canonical" href="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" />
+<meta property="og:description" content="Learn how to create a tasty CSS-animated hamburger menu for responsive web design. Follow our step-by-step tutorial using HTML, CSS, and JavaScript.
+
+" />
+<meta property="og:image" content="https://www.codewithfaraz.com/img/how to create animated hamburger menu using html, css and javascript.png" />
+<meta property="og:url" content="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial" />
+<meta property="og:site_name" content="Code with Faraz - Best Front-End Components and Blogs" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" />
+<meta name="twitter:description" content="Learn how to create a tasty CSS-animated hamburger menu for responsive web design. Follow our step-by-step tutorial using HTML, CSS, and JavaScript.
+
+" />
+<meta name="twitter:domain" content="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial" />
+<meta name="twitter:image" content="https://www.codewithfaraz.com/img/how to create animated hamburger menu using html, css and javascript.png" />
+<meta property="og:image:width" content="1239">
+<meta property="og:image:height" content="649">
+<meta property="article:publisher" content="https://www.facebook.com/codewithfaraz" />
+<meta property="article:author" content="https://www.facebook.com/codewithfaraz" />
+<meta property="og:locale" content="en_US" />
+<link rel="preconnect" href="https://www.codewithfaraz.com/">
+<link rel="stylesheet" href="https://www.codewithfaraz.com/public/inter.css">
+<link rel="icon" href="InstaPic.png" type="image/png">
+<link rel="stylesheet" href="public/app.css?v=0.39">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="owl_carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owl_carousel/owl.theme.default.min.css">
+<link rel="alternate" type="application/rss+xml" title="codewithFaraz &raquo; Feed" href="https://www.codewithfaraz.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="codewithFaraz &raquo; Blog Feed" href="https://www.codewithfaraz.com/blogfeed" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<script async src="https://fundingchoicesmessages.google.com/i/pub-3303804766726108?ers=1" nonce="SO_KUEWxXiWHLqEHg7Vu2g"></script>
+<script nonce="SO_KUEWxXiWHLqEHg7Vu2g">
+    (function() {
+        function signalGooglefcPresent() {
+            if (!window.frames['googlefcPresent']) {
+                if (document.body) {
+                    const iframe = document.createElement('iframe');
+                    iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                    iframe.style.display = 'none';
+                    iframe.name = 'googlefcPresent';
+                    document.body.appendChild(iframe);
+                } else {
+                    setTimeout(signalGooglefcPresent, 0);
+                }
+            }
+        }
+        signalGooglefcPresent();
+    })();
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89STL2HPDE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-89STL2HPDE');
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "name": "Collection of Front-End Components, Blogs and Tutorials Related to Technology, Programming and Web Development - CodewithFaraz",
+        "url": "https://www.codewithfaraz.com/",
+        "dateModified": "2023-03-06"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": [
+            "Blogs",
+            "Components",
+            "Category",
+            "Python Projects",
+            "Tools"
+        ],
+        "url": [
+            "https://www.codewithfaraz.com/blog",
+            "https://www.codewithfaraz.com/components",
+            "https://www.codewithfaraz.com/category",
+            "https://www.codewithfaraz.com/python-projects",
+            "https://www.codewithfaraz.com/tools"
+
+        ]
+    }
+</script>
+<link rel="stylesheet" href="prism/prism.css?v=0.2">
+<style>
+        code[class="language-html"],
+        code[class="language-css"],
+        code[class="language-js"] {
+            /* font-size: 15px !important; */
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 768px) {
+            div.code-toolbar {
+                margin-right: 5px;
+            }
+        }
+
+        .shareit a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 10%;
+            font-size: 18px;
+            color: #fff;
+            opacity: 0.75;
+            transition: opacity 0.15s linear;
+        }
+
+        .shareit a:hover {
+            opacity: 1;
+        }
+
+        .facebook {
+            background: #3b5998;
+        }
+
+        .twitter {
+            background: #55acee;
+        }
+
+        .linkedin {
+            background: #0077b5;
+        }
+
+        .reddit {
+            background: #FF4500;
+        }
+
+        .tumblr {
+            background: #000000;
+        }
+
+        .pinterest {
+            background: #cb2027;
+        }
+    </style>
+<script type="application/ld+json">
+       {
+           "@context": "https://schema.org",
+           "@type": "BlogPosting",
+           "mainEntityOfPage": {
+               "@type": "WebPage",
+               "@id": "https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial"
+           },
+           "headline": "Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial",
+           "description": "Learn how to create a tasty CSS-animated hamburger menu for responsive web design. Follow our step-by-step tutorial using HTML, CSS, and JavaScript.
+
+",
+           "image": "https://codewithfaraz.com/img/how to create animated hamburger menu using html, css and javascript.png",
+           "author": {
+               "@type": "Person",
+               "name": "Faraz"
+           },
+           "publisher": {
+               "@type": "Organization",
+               "name": "Code with Faraz",
+               "logo": {
+                   "@type": "ImageObject",
+                   "url": "https://codewithfaraz.com/InstaPic.png"
+               }
+           },
+           "datePublished": "2022-07-28 05:31:46",
+           "dateModified": "2022-07-28 05:31:46"
+       }
+        </script></head>
+<body>
+<script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+<style>
+  [x-cloak] {
+    display: none;
+  }
+</style>
+<nav class="border-b w-full z-50 top-0">
+<div x-data="{ open: false }" class="flex items-center justify-between flex-wrap bg-[#FEFEFE] p-4">
+<div class="flex lg:ml-5 items-center flex-shrink-0 lg:mr-6">
+<div class="avatar">
+<a href="https://www.codewithfaraz.com/">
+<img class="lg:block h-10 w-auto" src="InstaPic.png" alt="codewithfaraz - Best frontend developers component">
+</a>
+</div>
+<span class="font-semibold text-lg ml-2 text-[#377DFF] tracking-tight">Faraz.</span>
+</div>
+
+<div id="searchBarContainer" class="w-1/3 relative">
+<div id="search" class="searchContainer w-full p-2 flex items-center justify-between rounded-lg border border-[#377DFF]">
+<input type="text" id="mySearchInput" class="searchInput border-none outline-none bg-transparent sm:text-sm sm:leading-5 placeholder-gray-400" placeholder="Search..." autocomplete="off">
+<i id="searchBtn" class="cursor-pointer fas fa-search text-gray-900 hover:text-[#377DFF]"></i>
+</div>
+<hr class="hr-border-bottom">
+<div class="search-dropdown" id="SearchResults">
+</div>
+</div>
+<button class="lg:hidden flex items-center px-3 py-2 border rounded text-[#377DFF] border-[#377DFF] hover:text-[#FEFEFE] hover:border-[#FEFEFE] hover:bg-[#377DFF]" @click="open = !open" aria-label="Open Menu">
+<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+<path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+<path x-show="open" x-cloak fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div :class="{'block': open, 'hidden': !open}" class="w-full text-center lg:text-right lg:flex lg:items-center lg:w-auto">
+<a href="https://www.codewithfaraz.com/" class="block mt-3 lg:inline-block lg:mt-0 text-sm font-medium hover:text-[#377DFF] mr-4">Home</a>
+<a href="blog" class="block mt-3 lg:inline-block lg:mt-0 text-sm font-medium hover:text-[#377DFF] mr-4">Blogs</a>
+<div @click.away="open = false" class="relative inline-block" x-data="{ open: false }">
+<button @click="open = !open" class="mt-3 lg:mt-0 text-sm font-medium hover:text-[#377DFF] mr-4 focus:outline-none">Components
+<svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<div x-show="open" x-cloak x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 z-10 origin-top-right rounded-md shadow-lg md:w-48">
+<div class="px-2 py-2 bg-white rounded-md shadow text-center">
+<a class="block px-4 py-2 text-sm font-medium bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="components">HTML, CSS & JavaScript</a>
+<a class="block px-4 py-2 text-sm font-medium bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="python-projects">Python</a>
+<a class="block px-4 py-2 text-sm font-medium bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="csharp-projects">C#</a>
+<a class="block px-4 py-2 text-sm font-medium bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="icons">Icons</a>
+<a class="block px-4 py-2 text-sm font-medium bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="questions">Questions</a>
+</div>
+</div>
+</div>
+<a href="category" class="block mt-3 lg:inline-block lg:mt-0 text-sm font-medium hover:text-[#377DFF] mr-4">Category</a>
+<a href="tools" class="block mt-3 lg:inline-block lg:mt-0 text-sm font-medium hover:text-[#377DFF] mr-4">Tools</a>
+<a href="https://www.buymeacoffee.com/farazc60N" target="blank" class="inline-block leading-none mt-3 lg:mt-0"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 140px !important;" loading="lazy"></a>
+</div>
+</div>
+</nav>
+<script>
+  
+</script>
+
+<div id="contentId" class="container mx-auto flex flex-wrap">
+
+<div class="container w-full md:max-w-3xl mx-auto text-xl text-gray-800 leading-normal">
+<p class="text-base pt-6 md:text-sm text-[#377DFF] font-bold mx-4">&lt; <a href="components" class="text-base md:text-sm text-[#377DFF] font-bold no-underline hover:underline">BACK TO COMPONENTS</a></p>
+<div class="py-4">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3303804766726108" data-ad-slot="8338034958"></ins>
+<script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+</div>
+<div class="flex flex-col my-4 mx-4">
+<h1 class="font-bold break-normal text-gray-700 pb-2 text-3xl md:text-4xl">Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial</h1>
+<div class="flex justify-between flex-wrap mb-5">
+<div class="flex items-center">
+<a href="https://www.instagram.com/codewithfaraz">
+<img class="lg:block h-10 w-auto" src="InstaPic.png" alt="Faraz">
+</a>
+<p class="ml-3 text-sm md:text-base font-normal text-gray-600">By <span class="font-bold text-gray-700">Faraz</span> - <time class="entry-time" datetime="2022-07-28T05:31:46+05:30" title="2022-07-28T05:31:46+05:30">July 28, 2022</time></p>
+</div>
+<div class="shareit flex mt-2">
+
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial" target="blank" title="facebook"><i class="fab fa-facebook-f"></i></a>
+
+<a class="twitter" href="https://twitter.com/intent/tweet?text=Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial&url=https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial" target="blank" title="twitter"><i class="fab fa-twitter"></i></a>
+
+<a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial&title=Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" target="blank" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+
+<a class="reddit" href="https://www.reddit.com/submit?url=https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial&title=Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" target="blank" title="reddit"><i class="fab fa-reddit-alien"></i></a>
+
+<a class="tumblr" href="https://www.tumblr.com/share/link?url=https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial&name=Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial&description=Learn how to create a tasty CSS-animated hamburger menu for responsive web design. Follow our step-by-step tutorial using HTML, CSS, and JavaScript.
+
+" target="blank" title="tumblr"><i class="fab fa-tumblr"></i></a>
+
+<a class="pinterest" href="https://pinterest.com/pin/create/button/?url=https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial&media=https://www.codewithfaraz.com/img/how to create animated hamburger menu using html, css and javascript.png&description=Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" target="blank" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
+</div>
+</div>
+</div>
+<article class="text-base flex flex-col my-4 mx-4">
+
+<p class="mb-5">
+Learn how to create a tasty CSS-animated hamburger menu for responsive web design. Follow our step-by-step tutorial using HTML, CSS, and JavaScript.
+</p>
+<div class="flex justify-center">
+<a href="https://t.me/codewithfaraz" target="_blank" class="w-3/4 font-medium text-center text-white p-2 rounded-full shadow-xl" style="background:#27A5E7;" title="Join us on Telegram"><i></i> Join us on Telegram</a>
+</div>
+<hr class="my-5 mx-auto w-1/4 border rounded-md">
+<div class="flex justify-center overflow-hidden">
+<img width="400" height="400" class="my-5 object-cover object-center rounded" alt="how to create animated hamburger menu using html, css and javascript.png" title="Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" src="img/how to create animated hamburger menu using html, css and javascript.png">
+</div>
+<hr class="my-5 mx-auto w-1/4 border rounded-md">
+<div class="mb-4 alsoread_box"><strong>Read Also</strong><a href="content/150/creating-tailwind-css-accordion-faq-source-code-included"><span><img src="img/creating tailwind css accordion (faq)  source code included.jpg" alt="creating tailwind css accordion (faq)  source code included.jpg"></span>Creating Tailwind CSS Accordion (FAQ) | Source Code Included</a></div>
+<div class="mb-3">
+<h2 class="text-2xl font-bold">Table of Contents</h2><br><ol class="list-decimal" style="margin-left:60px;">
+<li><a class="hover:underline text-[#377DFF]" href="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial#introduction">Project Introduction</a></li>
+<li><a class="hover:underline text-[#377DFF]" href="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial#html-code">HTML Code</a></li>
+<li><a class="hover:underline text-[#377DFF]" href="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial#css-code">CSS Code</a></li>
+<li><a class="hover:underline text-[#377DFF]" href="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial#final-output">Preview</a></li>
+<li><a class="hover:underline text-[#377DFF]" href="https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial#conclusion">Conclusion</a></li></ol><br>
+</div>
+<div class="mb-3" id="introduction">
+<p>A hamburger menu is a type of navigation icon that is commonly used on mobile and responsive websites. It consists of three horizontal lines that resemble a hamburger, which can be clicked to reveal a hidden menu. In this tutorial, we will show you how to create an animated hamburger menu using HTML, CSS, and JavaScript. By the end of this tutorial, you will be able to implement this popular and useful feature on your own website.</p><br>
+<p>A hamburger menu is an icon used on websites and in applications that, when clicked or tapped, opens a side menu or navigation bar. This is called the "hamburger menu" because it has the shape of the famous burger. This hamburger is created by <a href="https://jonsuh.com/hamburgers/">Jonathan Suh</a>.</p><br>
+<p><b>Let's start making a tasty CSS-animated hamburger menu Using HTML, CSS, and JavaScript step by step.</b></p><br>
+<p>Join My Telegram Channel to Download the Project: <a class="underline" href="https://t.me/codewithfaraz"><b>Click Here</b></a></p>
+<br>
+<p><b>Prerequisites:</b></p>
+<p>Before starting this tutorial, you should have a basic understanding of HTML, CSS, and JavaScript. Additionally, you will need a code editor such as Visual Studio Code or Sublime Text to write and save your code.</p>
+</div>
+<p class="py-4 font-bold underline text-center ">Source Code</p>
+<div class="py-4" style="word-wrap:break-word;"><p class="font-bold">Step 1 (HTML Code):</p> The first thing we need to do is create our HTML File. We'll start with well-organized base hamburger menu markup and toggle a class name on click with JavaScript. After creating the files just paste the following codes into your file. Remember that you must save a file with the .html extension. </div>
+<pre id="html-code" class="line-numbers rounded-md"><code class="language-html"><textarea><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animated Hamburger Menu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="hamburgers.css" />
+  </head>
+  </style>
+  <body>
+    <div>
+    <button class="hamburger hamburger--emphatic" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
+  </body>
+</html></textarea></code></pre>
+<div class="py-3"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3303804766726108" data-ad-slot="8338034958"></ins>
+<script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                   </script></div>
+<div class="mb-4 alsoread_box"><strong>Read Also</strong><a href="content/70/simple-and-amazing-5-star-rating-with-html-and-css"><span><img src="img/simple and amazing 5-star rating with html and css.jpg" alt="simple and amazing 5-star rating with html and css.jpg"></span>Simple and Amazing 5-Star Rating with HTML and CSS</a></div>
+<div class="py-4" style="word-wrap:break-word;"><p class="font-bold">Step 2 (CSS Code):</p> <p>Next, You can download and include the CSS in the &lt;head&gt; of your site from <b>https://jonsuh.com/hamburgers/</b> or Create a CSS file with the name of hamburgers.css and paste the given codes into your CSS file. Remember that you must create a file with the .css extension.</p></div>
+<pre id="css-code" class="line-numbers rounded-md"><code class="language-css">/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background-color: #000;
+}
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::after,
+.hamburger-inner::before {
+  content: '';
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+.hamburger--emphatic {
+  overflow: hidden;
+}
+.hamburger--emphatic .hamburger-inner {
+  transition: background-color 125ms 175ms ease-in;
+}
+.hamburger--emphatic .hamburger-inner::before {
+  left: 0;
+  transition: transform 125ms cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 50ms 125ms linear, left 125ms 175ms ease-in;
+}
+.hamburger--emphatic .hamburger-inner::after {
+  top: 10px;
+  right: 0;
+  transition: transform 125ms cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 50ms 125ms linear, right 125ms 175ms ease-in;
+}
+.hamburger--emphatic.is-active .hamburger-inner {
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  background-color: transparent !important;
+}
+.hamburger--emphatic.is-active .hamburger-inner::before {
+  left: -80px;
+  top: -80px;
+  transform: translate3d(80px, 80px, 0) rotate(45deg);
+  transition: left 125ms ease-out, top 50ms 125ms linear,
+    transform 125ms 175ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hamburger--emphatic.is-active .hamburger-inner::after {
+  right: -80px;
+  top: -80px;
+  transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+  transition: right 125ms ease-out, top 50ms 125ms linear,
+    transform 125ms 175ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hamburger--emphatic-r {
+  overflow: hidden;
+}
+.hamburger--emphatic-r .hamburger-inner {
+  transition: background-color 125ms 175ms ease-in;
+}
+.hamburger--emphatic-r .hamburger-inner::before {
+  left: 0;
+  transition: transform 125ms cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 50ms 125ms linear, left 125ms 175ms ease-in;
+}
+.hamburger--emphatic-r .hamburger-inner::after {
+  top: 10px;
+  right: 0;
+  transition: transform 125ms cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 50ms 125ms linear, right 125ms 175ms ease-in;
+}
+.hamburger--emphatic-r.is-active .hamburger-inner {
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  background-color: transparent !important;
+}
+.hamburger--emphatic-r.is-active .hamburger-inner::before {
+  left: -80px;
+  top: 80px;
+  transform: translate3d(80px, -80px, 0) rotate(-45deg);
+  transition: left 125ms ease-out, top 50ms 125ms linear,
+    transform 125ms 175ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hamburger--emphatic-r.is-active .hamburger-inner::after {
+  right: -80px;
+  top: 80px;
+  transform: translate3d(-80px, -80px, 0) rotate(45deg);
+  transition: right 125ms ease-out, top 50ms 125ms linear,
+    transform 125ms 175ms cubic-bezier(0.075, 0.82, 0.165, 1);
+} </code></pre><p id="final-output" class="py-4"><span class="font-bold">Final Output: </span></p>
+<img width="50%" class="mx-auto" src="img/how to create animated hamburger menu using html, css and javascript.gif" alt="how to create animated hamburger menu using html, css and javascript.gif" title="Create an Animated Hamburger Menu - HTML, CSS, JS Tutorial" loading="lazy">
+<div class="my-4"></div>
+<div class="py-3"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3303804766726108" data-ad-slot="8338034958"></ins>
+<script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                   </script></div>
+<div class="mb-4 alsoread_box"><strong>Read Also</strong><a href="content/68/circular-grid-with-an-amazing-hover-effect-using-html-and-css"><span><img src="img/Circular grid with amazing hover effect using html and css.jpg" alt="Circular grid with amazing hover effect using html and css.jpg"></span>Circular Grid with an Amazing Hover Effect Using HTML and CSS</a></div><div id="conclusion" class="py-4"><p class="font-bold">Conclusion:</p> <p>In conclusion, By following the steps outlined in this tutorial, you should now have a fully functioning CSS-animated hamburger menu. Remember to test your menu on different devices and screen sizes to ensure it is fully responsive. With a little bit of creativity, you can create a visually appealing and functional hamburger menu that enhances the user experience on your website. If you have any questions or comments, feel free to leave them below. Additionally, check out the resources section for further learning and inspiration.</p> </div>
+<div class="py-4">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3303804766726108" data-ad-slot="8338034958"></ins>
+<script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+</div>
+<p class="py-4 font-bold ">That’s a wrap!</p>
+<p class="my-3">I hope you enjoyed this post. Now, with these examples, you can create your own amazing page. </p>
+<p class="my-3">Did you like it? Let me know in the comments below 🔥 and you can support me by <a href="https://www.buymeacoffee.com/farazc60N" class="hover:underline text-[#377DFF]">buying me a coffee.</a></p>
+<p class="my-3">And don’t forget to sign up to our email newsletter so you can get useful content like this sent right to your inbox!</p>
+<p class="my-10">Thanks! <br> Faraz 😊</p>
+<div class="text-base md:text-sm text-gray-500">Tags: <a href="category?tags=CSS" class="text-base md:text-sm text-green-500 no-underline hover:underline">CSS</a>, <a href="category?tags=Animated Hamburger Menu" class="text-base md:text-sm text-green-500 no-underline hover:underline">Animated Hamburger Menu</a>, <a href="category?tags=HTML" class="text-base md:text-sm text-green-500 no-underline hover:underline">HTML</a>, <a href="category?tags=JavaScript" class="text-base md:text-sm text-green-500 no-underline hover:underline">JavaScript</a>, <a href="category?tags=Responsive menu" class="text-base md:text-sm text-green-500 no-underline hover:underline">Responsive menu</a>, <a href="category?tags=UI design" class="text-base md:text-sm text-green-500 no-underline hover:underline">UI design</a>, <a href="category?tags=Mobile navigation" class="text-base md:text-sm text-green-500 no-underline hover:underline">Mobile navigation</a></div>
+<div id="end_article" class="grid grid-cols-[1fr,max-content,1fr] gap-x-5 text-center items-center before:content-[''] before:block before:h-px before:bg-gray-300 after:content-[''] after:block after:h-px after:bg-gray-300">End of the article</div>
+</article>
+
+<article class="flex flex-col my-4 mx-4">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-3303804766726108" data-ad-slot="2894136584"></ins>
+<script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+<div class="my-4 container px-4" id="disqus_thread"></div>
+<style>div#disqus_thread iframe[sandbox] {display: none !important;} </style>
+<script>
+    var disqus_config = function () {
+    this.page.url = 'https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial';
+    this.page.identifier = 'https://www.codewithfaraz.com/content/27/create-an-animated-hamburger-menu-html-css-js-tutorial'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://codewithfaraz.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+
+<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+<div id="subscribe" class="container px-4">
+<div class="bg-gradient-to-b from-green-100 to-gray-100 rounded-lg shadow-xl p-4 text-center">
+<h2 class="font-bold break-normal text-xl md:text-3xl">Subscribe to my Newsletter</h2>
+<h3 class="font-bold break-normal text-gray-600 text-sm md:text-base">Get the latest posts delivered right to your inbox</h3>
+<div class="w-full text-center pt-4">
+<div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
+<input type="email" id="emailval" placeholder="youremail@example.com" class="flex-1 w-3/4 mt-4 appearance-none border border-gray-400 rounded shadow-md p-3 text-gray-600 mr-2 focus:outline-none">
+<button type="submit" id="subscribebtn" class="flex-1 mt-4 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Subscribe</button>
+</div>
+<h3 id="subsMsg" class="mt-2 mx-auto text-sm font-medium text-red-600"></h3>
+</div>
+</div>
+</div>
+
+
+<hr class="border-b-2 mt-9 border-gray-400 mb-6 mx-4">
+</article>
+<style>
+    .whates-img,.whats-right-img img{border-radius:6px}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-lg-12,.col-lg-6,.col-md-6,.col-md-9,.col-sm-10,.col-xl-12,.col-xl-4,.col-xl-6,.col-xl-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}@media (min-width:576px){.col-sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:768px){.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}}@media (min-width:992px){.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}@media (min-width:1200px){.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}.align-items-end{-ms-flex-align:end!important;align-items:flex-end!important}.fade{transition:opacity .15s linear}@media screen and (prefers-reduced-motion:reduce){.fade{transition:none}}.fade:not(.show){opacity:0}.collapse:not(.show),.tab-content>.tab-pane{display:none}.pb-20{padding-bottom:20px}.whats-news-single{margin-left:15px;margin-right:15px}.whates-img{margin-bottom:12px;overflow:hidden}.whates-img img{width:100%;-webkit-transition:.4s ease-out;-moz-transition:.4s ease-out;-ms-transition:.4s ease-out;-o-transition:.4s ease-out;transition:.4s ease-out;transform:scale(1)}.whates-caption h4 a{font-size:24px;line-height:1.2;margin-bottom:12px;display:block;font-weight:700}.whates-caption h4 a:hover,.whats-right-cap h4 a:hover{color:#e62739}.whates-caption span{color:#707b8e;font-size:12px;margin-bottom:14px;display:block}.whates-caption p{margin-bottom:0;color:#000;font-size:16px}.whats-right-single{display:flex}.whats-right-cap{padding-left:18px;min-width:230px}.whats-right-cap span{text-transform:uppercase;font-size:11px;font-weight:700;line-height:1;margin-bottom:15px;display:inline-block}.whats-right-cap h4{font-size:14px;font-weight:700}.whats-right-cap h4 a{font-weight:500;line-height:1.4}.whats-right-cap p{color:#707b8e;font-size:12px;margin:0;line-height:1}.latest-nav{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.latest-nav-link,.tab-content>.active{display:block}.latest-nav-link{padding:.5rem 1rem}.latest-nav-link:focus,.latest-nav-link:hover{text-decoration:none}.latest-nav-link.disabled{color:#6c757d}.latest-nav-tabs{border-bottom:1px solid #dee2e6}.latest-nav-tabs .latest-nav-item{margin-bottom:-1px;display:block;color:#051441;text-transform:capitalize;font-size:16px;font-weight:500}.latest-nav-tabs .latest-nav-link:focus,.latest-nav-tabs .latest-nav-link:hover{border-color:#e9ecef #e9ecef #dee2e6}.latest-nav-tabs .latest-nav-link.disabled{color:#6c757d;background-color:transparent;border-color:transparent}.latest-nav-tabs .latest-nav-item.show .latest-nav-link,.latest-nav-tabs .latest-nav-link.active{color:#495057;background-color:#fff;border-color:#dee2e6 #dee2e6 #fff}.latest-nav-tabs .latest-nav-link{border-top-left-radius:.25rem;border-top-right-radius:.25rem;border:0;border-bottom:2px solid transparent;padding:0;margin:0 10px}.latest-nav-tabs .latest-nav-link.active{color:#e62739;background:0 0}.latest-nav-tabs{margin-bottom:31px;padding-bottom:0;position:relative;border:0;display:flex;justify-content:end;background:0 0}@media only screen and (min-width:992px) and (max-width:1199px){.whates-caption2 h4 a{font-size:20px}.whats-right-cap{padding-left:15px}.whats-right-cap h4{font-size:11px}.latest-nav-tabs .latest-nav-link{margin-bottom:10px}.latest-nav-tabs{justify-content:start}}@media only screen and (min-width:768px) and (max-width:991px){.whates-caption2 h4 a{font-size:23px}.whates-caption2 p{font-size:15px}.whats-right-cap h4{font-size:14px}.latest-nav-tabs .latest-nav-link{margin-bottom:10px}.latest-nav-tabs{justify-content:start}}@media only screen and (min-width:576px) and (max-width:767px){.latest-nav-tabs .latest-nav-link{margin-bottom:10px}.latest-nav-tabs{justify-content:start}}@media (max-width:575px){.whates-caption h4 a{font-size:21px}.whates-caption p{font-size:15px}.whats-right-single{display:block}.whats-right-img img{margin-bottom:7px}.whats-right-cap{padding-left:0}.latest-nav-tabs .latest-nav-link{margin-bottom:10px}.latest-nav-tabs{justify-content:start}}.tab-pane{-webkit-transition:.6s ease-out;-moz-transition:.6s ease-out;-ms-transition:.6s ease-out;-o-transition:.6s ease-out;transition:.6s ease-out}
+</style>
+<article class="flex flex-col my-4 mx-4">
+<div class="row justify-between align-items-end mb-4">
+<div class="col-xl-4">
+<div class="font-bold text-gray-700 leading-4 text-2xl mb-8">
+<h3>Latest Post</h3>
+</div>
+</div>
+<div class="col-xl-8 col-md-9">
+<div class="properties__button">
+
+<nav>
+<div class="latest-nav latest-nav-tabs" id="latest-nav-tab" role="tablist">
+<a class="latest-nav-item latest-nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">New</a>
+<a class="latest-nav-item latest-nav-link" id="nav-button-tab" data-toggle="tab" href="#nav-button" role="tab">Button</a>
+<a class="latest-nav-item latest-nav-link" id="nav-games-tab" data-toggle="tab" href="#nav-games" role="tab">Games</a>
+<a class="latest-nav-item latest-nav-link" id="nav-tool-tab" data-toggle="tab" href="#nav-tool" role="tab">Tool</a>
+<a class="latest-nav-item latest-nav-link" id="nav-footer-tab" data-toggle="tab" href="#nav-footer" role="tab">Footer</a>
+</div>
+</nav>
+
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+<div class="row">
+<div class="col-xl-6 col-lg-12">
+<div class="whats-news-single mb-10">
+<div class="whates-img">
+<img src="/img/Build Your Own Nixie Tube Clock using HTML, CSS, and JavaScript.webp" alt="Build Your Own Nixie Tube Clock using HTML, CSS, and JavaScript (Source Code)" title="Build Your Own Nixie Tube Clock using HTML, CSS, and JavaScript (Source Code)">
+</div>
+<div class="whates-caption">
+<h4><a href="https://www.codewithfaraz.com/content/378/build-your-own-nixie-tube-clock-using-html-css-and-javascript-source-code">Build Your Own Nixie Tube Clock using HTML, CSS, and JavaScript (Source Code)</a></h4>
+<span>by Faraz - April 20, 2024</span>
+<p>Learn how to create a stunning Nixie Tube Clock using HTML, CSS, and JavaScript. Get the source code and step-by-step instructions today!</p>
+</div>
+</div>
+</div> <div class="col-xl-6 col-lg-12">
+<div class="row">
+<div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Create a Responsive Popup Contact Form HTML, CSS, JavaScript Tutorial.webp" alt="Create a Responsive Popup Contact Form: HTML, CSS, JavaScript Tutorial" title="Create a Responsive Popup Contact Form: HTML, CSS, JavaScript Tutorial">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Form</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/377/create-a-responsive-popup-contact-form-html-css-javascript-tutorial">Create a Responsive Popup Contact Form: HTML, CSS, JavaScript Tutorial</a></h4>
+<p>April 17, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/create a responsive customer review using HTML and CSS.webp" alt="Create a Responsive Customer Review Using HTML and CSS" title="Create a Responsive Customer Review Using HTML and CSS">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">CSS</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/376/create-a-responsive-customer-review-using-html-and-css">Create a Responsive Customer Review Using HTML and CSS</a></h4>
+<p>April 14, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Create a URL Shortening Landing Page using HTML CSS JavaScript.webp" alt="Create a URL Shortening Landing Page using HTML, CSS, and JavaScript" title="Create a URL Shortening Landing Page using HTML, CSS, and JavaScript">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Landing Page</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/375/create-a-url-shortening-landing-page-using-html-css-and-javascript">Create a URL Shortening Landing Page using HTML, CSS, and JavaScript</a></h4>
+<p>April 08, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Develop Responsive Admin Dashboard with HTML, Materialize CSS, and JavaScript.webp" alt="Develop Responsive Admin Dashboard with HTML, Materialize CSS, and JavaScript" title="Develop Responsive Admin Dashboard with HTML, Materialize CSS, and JavaScript">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Dashboard</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/374/develop-responsive-admin-dashboard-with-html-materialize-css-and-javascript">Develop Responsive Admin Dashboard with HTML, Materialize CSS, and JavaScript</a></h4>
+<p>April 05, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="nav-button" role="tabpanel" aria-labelledby="nav-button-tab">
+<div class="row">
+<div class="col-xl-6 col-lg-12">
+<div class="whats-news-single mb-10">
+<div class="whates-img">
+<img src="/img/How to Create a Scroll Down Button HTML, CSS, JavaScript Tutorial.webp" alt="How to Create a Scroll Down Button: HTML, CSS, JavaScript Tutorial" title="How to Create a Scroll Down Button: HTML, CSS, JavaScript Tutorial">
+</div>
+<div class="whates-caption">
+<h4><a href="https://www.codewithfaraz.com/content/361/how-to-create-a-scroll-down-button-html-css-javascript-tutorial">How to Create a Scroll Down Button: HTML, CSS, JavaScript Tutorial</a></h4>
+<span>by Faraz - March 17, 2024</span>
+<p>Learn to add a sleek scroll down button to your website using HTML, CSS, and JavaScript. Step-by-step guide with code examples.</p>
+</div>
+</div>
+</div> <div class="col-xl-6 col-lg-12">
+<div class="row">
+<div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/How to Create a Trending Animated Button Using HTML and CSS.webp" alt="How to Create a Trending Animated Button Using HTML and CSS" title="How to Create a Trending Animated Button Using HTML and CSS">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Button</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/358/how-to-create-a-trending-animated-button-using-html-and-css">How to Create a Trending Animated Button Using HTML and CSS</a></h4>
+<p>March 15, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Create Interactive Booking Button with mask-image using HTML and CSS.webp" alt="Create Interactive Booking Button with mask-image using HTML and CSS (Source Code)" title="Create Interactive Booking Button with mask-image using HTML and CSS (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Button</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/352/create-interactive-booking-button-with-mask-image-using-html-and-css-source-code">Create Interactive Booking Button with mask-image using HTML and CSS (Source Code)</a></h4>
+<p>March 10, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Create Shimmering Effect Button HTML & CSS Tutorial.webp" alt="Create Shimmering Effect Button: HTML & CSS Tutorial (Source Code)" title="Create Shimmering Effect Button: HTML & CSS Tutorial (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Button</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/346/create-shimmering-effect-button-html-css-tutorial-source-code">Create Shimmering Effect Button: HTML & CSS Tutorial (Source Code)</a></h4>
+<p>March 07, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/How to Create a Liquid Button with HTML, CSS, and JavaScript.jpg" alt="How to Create a Liquid Button with HTML, CSS, and JavaScript (Source Code)" title="How to Create a Liquid Button with HTML, CSS, and JavaScript (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Button</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/335/how-to-create-a-liquid-button-with-html-css-and-javascript-source-code">How to Create a Liquid Button with HTML, CSS, and JavaScript (Source Code)</a></h4>
+<p>March 01, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="nav-games" role="tabpanel" aria-labelledby="nav-games-tab">
+<div class="row">
+<div class="col-xl-6 col-lg-12">
+<div class="whats-news-single mb-10">
+<div class="whates-img">
+<img src="/img/Build a Number Guessing Game using HTML, CSS, and JavaScript with Source Code.webp" alt="Build a Number Guessing Game using HTML, CSS, and JavaScript | Source Code" title="Build a Number Guessing Game using HTML, CSS, and JavaScript | Source Code">
+</div>
+<div class="whates-caption">
+<h4><a href="https://www.codewithfaraz.com/content/371/build-a-number-guessing-game-using-html-css-and-javascript-source-code">Build a Number Guessing Game using HTML, CSS, and JavaScript | Source Code</a></h4>
+<span>by Faraz - April 01, 2024</span>
+<p>Learn how to create an interactive Number Guessing Game from scratch using HTML, CSS, and JavaScript with this beginner-friendly tutorial.</p>
+</div>
+</div>
+</div> <div class="col-xl-6 col-lg-12">
+<div class="row">
+<div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Building a Fruit Slicer Game with HTML, CSS, and JavaScript.jpg" alt="Building a Fruit Slicer Game with HTML, CSS, and JavaScript (Source Code)" title="Building a Fruit Slicer Game with HTML, CSS, and JavaScript (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Games</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/303/building-a-fruit-slicer-game-with-html-css-and-javascript-source-code">Building a Fruit Slicer Game with HTML, CSS, and JavaScript (Source Code)</a></h4>
+<p>December 25, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Create Connect Four Game Using HTML, CSS, and JavaScript.jpg" alt="Create Connect Four Game Using HTML, CSS, and JavaScript (Source Code)" title="Create Connect Four Game Using HTML, CSS, and JavaScript (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Games</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/297/create-connect-four-game-using-html-css-and-javascript-source-code">Create Connect Four Game Using HTML, CSS, and JavaScript (Source Code)</a></h4>
+<p>December 07, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Creating a Candy Crush Clone HTML, CSS, and JavaScript Tutorial.jpg" alt="Creating a Candy Crush Clone: HTML, CSS, and JavaScript Tutorial (Source Code)" title="Creating a Candy Crush Clone: HTML, CSS, and JavaScript Tutorial (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Games</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/294/creating-a-candy-crush-clone-html-css-and-javascript-tutorial-source-code">Creating a Candy Crush Clone: HTML, CSS, and JavaScript Tutorial (Source Code)</a></h4>
+<p>November 17, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Sudoku Solver with HTML, CSS, and JavaScript.jpg" alt="Sudoku Solver with HTML, CSS, and JavaScript" title="Sudoku Solver with HTML, CSS, and JavaScript">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Games</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/269/sudoku-solver-with-html-css-and-javascript">Sudoku Solver with HTML, CSS, and JavaScript</a></h4>
+<p>October 16, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="nav-tool" role="tabpanel" aria-labelledby="nav-tool-tab">
+<div class="row">
+<div class="col-xl-6 col-lg-12">
+<div class="whats-news-single mb-10">
+<div class="whates-img">
+<img src="/img/Create Image Color Extractor Tool using HTML, CSS, JavaScript, and Vibrantjs.jpg" alt="Create Image Color Extractor Tool using HTML, CSS, JavaScript, and Vibrant.js" title="Create Image Color Extractor Tool using HTML, CSS, JavaScript, and Vibrant.js">
+</div>
+<div class="whates-caption">
+<h4><a href="https://www.codewithfaraz.com/content/316/create-image-color-extractor-tool-using-html-css-javascript-and-vibrantjs">Create Image Color Extractor Tool using HTML, CSS, JavaScript, and Vibrant.js</a></h4>
+<span>by Faraz - January 23, 2024</span>
+<p>Master the art of color picking with Vibrant.js. This tutorial guides you through building a custom color extractor tool using HTML, CSS, and JavaScript.</p>
+</div>
+</div>
+</div> <div class="col-xl-6 col-lg-12">
+<div class="row">
+<div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Build a Responsive Screen Distance Measure with HTML, CSS, and JavaScript.jpg" alt="Build a Responsive Screen Distance Measure with HTML, CSS, and JavaScript" title="Build a Responsive Screen Distance Measure with HTML, CSS, and JavaScript">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Tools</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/306/build-a-responsive-screen-distance-measure-with-html-css-and-javascript">Build a Responsive Screen Distance Measure with HTML, CSS, and JavaScript</a></h4>
+<p>January 04, 2024</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Crafting Custom Alarm and Clock Interfaces using HTML, CSS, and JavaScript.jpg" alt="Crafting Custom Alarm and Clock Interfaces using HTML, CSS, and JavaScript" title="Crafting Custom Alarm and Clock Interfaces using HTML, CSS, and JavaScript">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Clock</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/295/crafting-custom-alarm-and-clock-interfaces-using-html-css-and-javascript">Crafting Custom Alarm and Clock Interfaces using HTML, CSS, and JavaScript</a></h4>
+<p>November 30, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Detecting User OS and Screen Resolution with JavaScript and UAParser.jpg" alt="Detect User's Browser, Screen Resolution, OS, and More with JavaScript using UAParser.js Library" title="Detect User's Browser, Screen Resolution, OS, and More with JavaScript using UAParser.js Library">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Tools</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/286/detect-users-browser-screen-resolution-os-and-more-with-javascript-using-uaparserjs-library">Detect User's Browser, Screen Resolution, OS, and More with JavaScript using UAParser.js Library</a></h4>
+<p>October 30, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/URL Keeper with HTML, CSS, and JavaScript.jpg" alt="URL Keeper with HTML, CSS, and JavaScript (Source Code)" title="URL Keeper with HTML, CSS, and JavaScript (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">App</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/281/url-keeper-with-html-css-and-javascript-source-code">URL Keeper with HTML, CSS, and JavaScript (Source Code)</a></h4>
+<p>October 26, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="tab-pane fade" id="nav-footer" role="tabpanel" aria-labelledby="nav-footer-tab">
+<div class="row">
+<div class="col-xl-6 col-lg-12">
+<div class="whats-news-single mb-10">
+<div class="whates-img">
+<img src="/img/Creating a Responsive Footer with Tailwind CSS.jpg" alt="Creating a Responsive Footer with Tailwind CSS (Source Code)" title="Creating a Responsive Footer with Tailwind CSS (Source Code)">
+</div>
+<div class="whates-caption">
+<h4><a href="https://www.codewithfaraz.com/content/330/creating-a-responsive-footer-with-tailwind-css-source-code">Creating a Responsive Footer with Tailwind CSS (Source Code)</a></h4>
+<span>by Faraz - February 25, 2024</span>
+<p>Learn how to design a modern footer for your website using Tailwind CSS with our detailed tutorial. Perfect for beginners in web development.</p>
+</div>
+</div>
+</div> <div class="col-xl-6 col-lg-12">
+<div class="row">
+<div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Crafting a Responsive HTML and CSS Footer.jpg" alt="Crafting a Responsive HTML and CSS Footer (Source Code)" title="Crafting a Responsive HTML and CSS Footer (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Footer</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/291/crafting-a-responsive-html-and-css-footer-source-code">Crafting a Responsive HTML and CSS Footer (Source Code)</a></h4>
+<p>November 11, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/Create an Animated Footer with HTML and CSS.jpg" alt="Create an Animated Footer with HTML and CSS (Source Code)" title="Create an Animated Footer with HTML and CSS (Source Code)">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Footer</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/271/create-an-animated-footer-with-html-and-css-source-code">Create an Animated Footer with HTML and CSS (Source Code)</a></h4>
+<p>October 17, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/bootstrap footer template for every website style.jpg" alt="Bootstrap Footer Template for Every Website Style" title="Bootstrap Footer Template for Every Website Style">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Footer</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/113/bootstrap-footer-template-for-every-website-style">Bootstrap Footer Template for Every Website Style</a></h4>
+<p>March 08, 2023</p>
+</div>
+</div>
+</div><div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+<div class="whats-right-single mb-5">
+<div class="whats-right-img">
+<img width="300px" src="/img/how to create a responsive footer for your website with bootstrap 5.jpg" alt="How to Create a Responsive Footer for Your Website with Bootstrap 5" title="How to Create a Responsive Footer for Your Website with Bootstrap 5">
+</div>
+<div class="whats-right-cap">
+<span class="text-[#377DFF]">Footer</span>
+<h4 class="mb-2"><a href="https://www.codewithfaraz.com/content/52/how-to-create-a-responsive-footer-for-your-website-with-bootstrap-5">How to Create a Responsive Footer for Your Website with Bootstrap 5</a></h4>
+<p>August 19, 2022</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</article> </div>
+
+<style>
+    .Showads::before {
+        color: #595959;
+        content: 'advertisement';
+        display: block;
+        font: 400 10px/18px Verdana;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        top: 2px;
+        width: 100%;
+        z-index: 1;
+        margin-top: -17px;
+    }
+
+    .sidebar{
+    will-change: min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+</style>
+<aside id="sidebar" class="sidebar w-full lg:w-1/3">
+<div id="sidebar__inner" class="sidebar__inner flex flex-col items-center px-3">
+<div class="w-full bg-[#f4f5f8] shadow flex flex-col my-4 p-6">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">About Us</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div>
+<p class="pb-2 text-gray-700">A professional educational platform to give you the best educational content, with a focus on dependability for tech tips, blogging, coding, programming, and much more</p>
+<a href="about-us" class="w-full bg-blue-700 text-white font-bold text-sm uppercase rounded hover:bg-blue-600 flex items-center justify-center px-2 py-3 mt-4">
+Get to know us
+</a>
+</div>
+<div class="Showads relative w-full bg-[#f4f5f8] shadow text-center my-4 p-2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3303804766726108" data-ad-slot="9491334527" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="w-full bg-[#f4f5f8] shadow my-4 p-6 ">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Useful Tools</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div>
+<div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<svg width="41" height="44" viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.5592 43.2811C17.2611 43.1111 15.9828 42.8147 14.7423 42.3961C13.4957 41.9745 12.292 41.4348 11.1481 40.7841L11.0162 40.7101C9.87756 40.0489 8.80566 39.2786 7.81605 38.4101C6.83433 37.5432 5.93928 36.583 5.14319 35.5431C4.34634 34.4982 3.65324 33.3783 3.07337 32.1991C2.4925 31.0185 2.02807 29.7839 1.68714 28.5131C1.34795 27.2408 1.13194 25.9388 1.04212 24.6251C0.954488 23.3153 0.994795 22.0001 1.16224 20.6981C1.33226 19.401 1.62843 18.1235 2.047 16.8841C2.46802 15.6395 3.00749 14.438 3.65735 13.2961L3.693 13.2341C3.7104 13.1997 3.72987 13.1663 3.7511 13.1341C4.40978 12.0095 5.17412 10.9501 6.03333 9.97008C6.9003 8.98936 7.86017 8.09516 8.90003 7.30008C9.94527 6.5033 11.0661 5.81067 12.2462 5.23208C13.4263 4.6499 14.661 4.18565 15.9323 3.84608C17.2078 3.50255 18.514 3.28583 19.8322 3.19908C21.1484 3.1114 22.47 3.1536 23.778 3.32508C25.0826 3.49943 26.367 3.80086 27.6129 4.22508C28.8633 4.65103 30.0692 5.19831 31.213 5.85908L31.2311 5.87108C31.4273 5.98722 31.5995 6.13959 31.7389 6.32008C31.8764 6.50162 31.9785 6.70759 32.0392 6.92708C32.0978 7.14907 32.1133 7.38023 32.0851 7.60808C32.0549 7.83797 31.9804 8.05977 31.8654 8.26108C31.7537 8.46255 31.5997 8.63754 31.4142 8.77408C31.2318 8.91797 31.0216 9.02281 30.797 9.08208C30.5745 9.13942 30.3436 9.15501 30.1154 9.12808C29.8855 9.09766 29.6634 9.02295 29.462 8.90808C28.5165 8.36379 27.52 7.91299 26.4869 7.56208C25.4579 7.21322 24.3972 6.96571 23.32 6.82308C22.2378 6.68309 21.1449 6.64959 20.0563 6.72308C18.9667 6.79628 17.8867 6.9741 16.8312 7.25408C15.7783 7.53691 14.7552 7.92173 13.777 8.40308C12.7984 8.88478 11.8697 9.46155 11.004 10.1251C10.1426 10.7857 9.34889 11.5304 8.63489 12.3481C7.91916 13.169 7.2853 14.0575 6.74134 15.0011L6.68909 15.0931C6.16624 16.0103 5.73296 16.9758 5.39515 17.9761C5.04558 19.0026 4.79779 20.061 4.65589 21.1361C4.51483 22.2181 4.48172 23.3115 4.55628 24.4001C4.62867 25.4887 4.80627 26.5678 5.08704 27.6221C5.36936 28.6758 5.75412 29.6994 6.23597 30.6781C6.71811 31.6564 7.29503 32.5852 7.95814 33.4511C8.61762 34.311 9.36 35.1038 10.1749 35.8181C10.9968 36.5371 11.8876 37.1735 12.8341 37.7181C13.7778 38.2619 14.7724 38.7127 15.8034 39.0641C16.8326 39.4125 17.8932 39.66 18.9703 39.8031C20.0525 39.9431 21.1454 39.9766 22.234 39.9031C23.3226 39.8299 24.4017 39.6521 25.4562 39.3721C26.5117 39.0873 27.5374 38.7019 28.5192 38.2211C29.4972 37.7392 30.4258 37.1631 31.2921 36.5011C32.1537 35.8429 32.9469 35.0995 33.6593 34.2821C34.3769 33.4598 35.0131 32.57 35.5592 31.6251C35.6732 31.4251 35.7833 31.2251 35.8873 31.0251C35.9813 30.8511 36.087 30.6331 36.213 30.3781C36.299 30.2001 36.3912 29.9781 36.4952 29.7311C36.5872 29.5071 36.6752 29.2941 36.7482 29.0921C36.8212 28.8901 36.8983 28.6681 36.9743 28.4451C37.0503 28.2221 37.112 27.9941 37.174 27.7681C37.244 27.5201 37.3023 27.2891 37.3483 27.0871C37.4183 26.8331 37.4702 26.6021 37.5162 26.3661C37.5578 26.1398 37.6438 25.924 37.7692 25.7311C37.8952 25.5393 38.058 25.3744 38.2482 25.2461C38.4387 25.1163 38.652 25.024 38.8771 24.9741C39.1034 24.9261 39.337 24.9241 39.5641 24.9681C39.791 25.0102 40.0077 25.0965 40.2013 25.2221C40.3925 25.3491 40.5574 25.5117 40.6871 25.7011C40.8149 25.8925 40.9068 26.1057 40.9581 26.3301C41.0031 26.5569 41.0031 26.7903 40.9581 27.0171C40.9061 27.2951 40.8483 27.5721 40.7863 27.8441C40.7243 28.1161 40.6524 28.3991 40.5734 28.6691C40.4944 28.9391 40.4092 29.2241 40.3292 29.4841C40.2492 29.7441 40.1551 29.9991 40.0451 30.2841C39.9351 30.5691 39.8369 30.8331 39.7389 31.0691C39.6409 31.3051 39.5262 31.5691 39.3942 31.8501C39.2782 32.1041 39.151 32.3577 39.0123 32.6111C38.8783 32.8611 38.7462 33.1111 38.6002 33.3581V33.3681C37.9402 34.5112 37.1696 35.587 36.2999 36.5801C35.4327 37.5689 34.4715 38.4708 33.4293 39.2731C32.3819 40.075 31.2593 40.7736 30.0773 41.3591C28.8896 41.9449 27.6477 42.4137 26.3693 42.7591C25.0975 43.0998 23.7956 43.3164 22.4821 43.4061C22.0381 43.4361 21.5934 43.4511 21.1481 43.4511C20.2824 43.4484 19.4178 43.3916 18.5592 43.2811ZM29.4469 32.2521C28.7994 32.2642 28.1553 32.1564 27.547 31.9341C27.0194 31.7365 26.5721 31.3698 26.275 30.8911C25.947 30.3069 25.7895 29.6423 25.8209 28.9731V26.4131H24.5641C24.5097 26.4141 24.4558 26.4039 24.4054 26.3833C24.355 26.3627 24.3092 26.332 24.2711 26.2931C24.2321 26.2549 24.2014 26.2091 24.1808 26.1585C24.1602 26.1079 24.1499 26.0537 24.151 25.9991V24.3931C24.149 24.3375 24.1587 24.2821 24.1793 24.2304C24.2 24.1788 24.2314 24.132 24.2711 24.0931C24.3094 24.0546 24.355 24.0242 24.4054 24.0039C24.4558 23.9837 24.5098 23.9738 24.5641 23.9751H25.8209V21.3691C25.8198 21.3145 25.8301 21.2602 25.8507 21.2097C25.8714 21.1591 25.902 21.1133 25.941 21.0751C25.9793 21.0361 26.0252 21.0053 26.0758 20.9847C26.1264 20.964 26.1804 20.954 26.235 20.9551H28.5421C28.5968 20.9536 28.6512 20.9635 28.7018 20.9842C28.7524 21.0048 28.7981 21.0358 28.8361 21.0751C28.8751 21.1133 28.9058 21.1591 28.9264 21.2097C28.947 21.2602 28.9573 21.3145 28.9562 21.3691V23.9801H30.962C31.0163 23.9788 31.0704 23.9887 31.1207 24.0089C31.1711 24.0292 31.2167 24.0596 31.255 24.0981C31.2948 24.137 31.3261 24.1838 31.3468 24.2354C31.3675 24.2871 31.3771 24.3425 31.3751 24.3981V26.0001C31.3763 26.0547 31.366 26.1089 31.3453 26.1595C31.3247 26.2101 31.294 26.2559 31.255 26.2941C31.2169 26.333 31.1716 26.3637 31.1212 26.3843C31.0708 26.4049 31.0165 26.4151 30.962 26.4141H28.9562V28.7001C28.9415 28.9554 29.0087 29.2087 29.1481 29.4231C29.2186 29.5131 29.3105 29.5843 29.4152 29.6304C29.5198 29.6764 29.6342 29.6959 29.7482 29.6871H31.0851C31.1407 29.6851 31.196 29.6948 31.2477 29.7154C31.2993 29.7361 31.346 29.7673 31.3849 29.8071C31.424 29.8451 31.4549 29.891 31.4752 29.9416C31.4955 29.9922 31.505 30.0466 31.5031 30.1011V31.8351C31.5048 31.8896 31.495 31.9439 31.4747 31.9945C31.4544 32.0451 31.4238 32.0909 31.3849 32.1291C31.346 32.1688 31.2993 32.2001 31.2477 32.2207C31.196 32.2414 31.1407 32.251 31.0851 32.2491L29.4469 32.2521ZM15.8082 32.2521C15.7212 32.254 15.6345 32.2381 15.5538 32.2054C15.4732 32.1727 15.4002 32.124 15.339 32.0621C15.2766 32.0008 15.2275 31.9274 15.1945 31.8464C15.1614 31.7654 15.1453 31.6785 15.1471 31.5911V19.1671H10.7701C10.6827 19.1692 10.5955 19.1535 10.5143 19.1208C10.4331 19.0882 10.3596 19.0392 10.298 18.9771C10.2358 18.9157 10.1868 18.8422 10.1539 18.7613C10.1211 18.6803 10.1052 18.5935 10.1071 18.5061V15.0941C10.1052 15.0067 10.1211 14.9199 10.1539 14.8389C10.1868 14.7579 10.2358 14.6845 10.298 14.6231C10.3596 14.5609 10.4331 14.512 10.5143 14.4793C10.5955 14.4467 10.6827 14.4309 10.7701 14.4331H25.0763C25.1636 14.4313 25.2502 14.4473 25.3312 14.4799C25.4121 14.5126 25.4854 14.5613 25.547 14.6231C25.6088 14.6848 25.6574 14.7583 25.6901 14.8392C25.7227 14.9201 25.7386 15.0068 25.7369 15.0941V18.5061C25.7386 18.5933 25.7227 18.68 25.6901 18.761C25.6574 18.8419 25.6088 18.9154 25.547 18.9771C25.4854 19.0389 25.4121 19.0876 25.3312 19.1202C25.2502 19.1529 25.1636 19.1688 25.0763 19.1671H20.6969V31.5911C20.6987 31.6785 20.6826 31.7654 20.6495 31.8464C20.6165 31.9274 20.5674 32.0008 20.505 32.0621C20.4439 32.124 20.3708 32.1727 20.2902 32.2054C20.2095 32.2381 20.1232 32.254 20.0363 32.2521H15.8082ZM28.755 14.8301C28.5255 14.81 28.3025 14.7448 28.0983 14.6381C27.8918 14.5333 27.7087 14.3877 27.5602 14.2101C27.4103 14.034 27.2965 13.8301 27.2252 13.6101C27.1537 13.3906 27.1259 13.1593 27.1432 12.9291C27.1624 12.6975 27.2276 12.4721 27.3351 12.2661C27.4384 12.0607 27.5846 11.8797 27.7633 11.7351C27.9396 11.5852 28.143 11.4711 28.3629 11.3991L34.9713 9.28508L31.9962 3.57208C31.8889 3.36741 31.8238 3.14335 31.8043 2.91308C31.7851 2.6833 31.8106 2.45198 31.88 2.23208C31.9465 2.00897 32.059 1.80222 32.2101 1.62508C32.3569 1.44542 32.5392 1.29772 32.7452 1.19108C32.9497 1.08364 33.1736 1.01899 33.4039 1.00108C33.6336 0.982449 33.8648 1.00756 34.0851 1.07508C34.3069 1.14472 34.513 1.25679 34.692 1.40508C34.8697 1.55311 35.0156 1.73583 35.1202 1.94208L39.0592 9.50308C39.0746 9.54745 39.0941 9.5903 39.1173 9.63108L39.1471 9.71308L39.1691 9.78708C39.2363 10.004 39.2622 10.2316 39.2452 10.4581C39.2261 10.6896 39.1613 10.9149 39.0543 11.1211C38.9503 11.326 38.8043 11.5069 38.6261 11.6521C38.4488 11.8005 38.2452 11.9144 38.026 11.9881L29.4362 14.7431C29.2597 14.8012 29.0751 14.8305 28.8893 14.8301C28.8453 14.8351 28.8 14.8331 28.755 14.8301Z" fill="#4C3FF2"></path>
+</svg>
+</div>
+<div class="flex items-center w-64">
+<h3 class="leading-4 "><a class="text-sm uppercase" href="tools/case-converter">Case Converter</a></h3>
+</div>
+</div>
+<div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 2H37C39.2091 2 41 3.79086 41 6V11C41 13.2091 39.2091 15 37 15H17C14.7909 15 13 13.2091 13 11V6C13 3.79086 14.7909 2 17 2ZM11 6C11 2.68629 13.6863 0 17 0H37C40.3137 0 43 2.68629 43 6V11C43 14.3137 40.3137 17 37 17H21L17.5 21L17 17C13.6863 17 11 14.3137 11 11V6ZM9 24H35C38.866 24 42 27.134 42 31C42 34.866 38.866 38 35 38H9C5.13401 38 2 34.866 2 31C2 27.134 5.13401 24 9 24ZM0 31C0 26.0294 4.02944 22 9 22H35C39.9706 22 44 26.0294 44 31C44 35.9706 39.9706 40 35 40H9C4.02944 40 0 35.9706 0 31ZM19.7591 5.24675V12H17.9257V6.93506H17.8862L16.4089 7.81879V6.26238L18.0708 5.24675H19.7591ZM23.4672 12V10.681L25.9864 8.597C26.1535 8.4585 26.2964 8.3288 26.4151 8.20789C26.536 8.08479 26.6283 7.95838 26.6921 7.82868C26.758 7.69898 26.791 7.55499 26.791 7.39671C26.791 7.22305 26.7536 7.07466 26.6789 6.95155C26.6064 6.82845 26.5052 6.73392 26.3755 6.66797C26.2458 6.59982 26.0963 6.56575 25.9271 6.56575C25.7578 6.56575 25.6083 6.59982 25.4786 6.66797C25.3511 6.73612 25.2522 6.83614 25.1818 6.96804C25.1115 7.09994 25.0763 7.26042 25.0763 7.44947H23.3353C23.3353 6.97463 23.4419 6.56575 23.6551 6.22281C23.8683 5.87987 24.1695 5.61607 24.5586 5.43141C24.9477 5.24675 25.4039 5.15442 25.9271 5.15442C26.4679 5.15442 26.9361 5.24126 27.3318 5.41493C27.7297 5.58639 28.0364 5.82821 28.2518 6.14037C28.4694 6.45253 28.5783 6.81855 28.5783 7.23843C28.5783 7.49784 28.5244 7.75614 28.4167 8.01334C28.309 8.26835 28.1155 8.55083 27.8363 8.8608C27.5571 9.17076 27.1603 9.54008 26.6459 9.96875L26.0128 10.4963V10.5359H28.6508V12H23.4672ZM34.4296 12.0923C33.8976 12.0923 33.425 12.0011 33.0117 11.8186C32.6006 11.634 32.2775 11.3801 32.0423 11.0569C31.807 10.7338 31.6883 10.3622 31.6861 9.94237H33.5327C33.5349 10.0721 33.5745 10.1886 33.6514 10.2919C33.7306 10.393 33.8383 10.4722 33.9746 10.5293C34.1109 10.5865 34.267 10.6151 34.4428 10.6151C34.6121 10.6151 34.7616 10.5854 34.8913 10.526C35.021 10.4645 35.1221 10.3798 35.1947 10.2721C35.2672 10.1644 35.3024 10.0413 35.3002 9.9028C35.3024 9.7665 35.2606 9.6456 35.1749 9.54008C35.0913 9.43456 34.9737 9.35212 34.822 9.29277C34.6704 9.23341 34.4956 9.20373 34.2977 9.20373H33.6119V7.9375H34.2977C34.4802 7.9375 34.6407 7.90782 34.7792 7.84847C34.9199 7.78911 35.0287 7.70668 35.1056 7.60116C35.1848 7.49564 35.2232 7.37473 35.221 7.23843C35.2232 7.10653 35.1914 6.99002 35.1254 6.8889C35.0595 6.78778 34.9671 6.70864 34.8484 6.65148C34.7319 6.59432 34.5967 6.56575 34.4428 6.56575C34.2758 6.56575 34.1263 6.59542 33.9944 6.65478C33.8647 6.71413 33.7624 6.79657 33.6877 6.90209C33.613 7.00761 33.5745 7.12852 33.5723 7.26481H31.818C31.8202 6.85153 31.9334 6.48661 32.1577 6.17005C32.3841 5.85349 32.6941 5.60508 33.0876 5.42482C33.4811 5.24455 33.9328 5.15442 34.4428 5.15442C34.9418 5.15442 35.3826 5.23906 35.7651 5.40833C36.1498 5.5776 36.4499 5.81062 36.6653 6.1074C36.883 6.40197 36.9907 6.73941 36.9885 7.11972C36.9929 7.49784 36.8632 7.8078 36.5994 8.04961C36.3378 8.29143 36.0058 8.43432 35.6035 8.47829V8.53105C36.1487 8.5904 36.5587 8.75747 36.8335 9.03226C37.1083 9.30486 37.2435 9.64779 37.2391 10.0611C37.2413 10.4568 37.1226 10.8074 36.883 11.113C36.6455 11.4185 36.3147 11.6582 35.8904 11.8318C35.4683 12.0055 34.9814 12.0923 34.4296 12.0923ZM8.18466 27.2879L10.5083 35.1667H12.5549L13.8937 30.7656H13.9553L15.294 35.1667H17.3407L19.6643 27.2879H17.2791L16.2019 32.1506H16.1404L14.8632 27.2879H12.9858L11.7086 32.1352H11.647L10.5698 27.2879H8.18466ZM19.7287 34.9782C19.9416 35.1859 20.1968 35.2898 20.4943 35.2898C20.6841 35.2898 20.8598 35.2423 21.0214 35.1475C21.1829 35.05 21.3137 34.9205 21.4138 34.7589C21.5163 34.5948 21.5689 34.4127 21.5715 34.2126C21.5689 33.9202 21.4586 33.6702 21.2406 33.4624C21.0252 33.2547 20.7764 33.1508 20.4943 33.1508C20.1968 33.1508 19.9416 33.2547 19.7287 33.4624C19.5184 33.6702 19.4146 33.9202 19.4171 34.2126C19.4146 34.5127 19.5184 34.7679 19.7287 34.9782ZM23.1142 34.9782C23.327 35.1859 23.5822 35.2898 23.8797 35.2898C24.0695 35.2898 24.2452 35.2423 24.4068 35.1475C24.5683 35.05 24.6991 34.9205 24.7992 34.7589C24.9018 34.5948 24.9543 34.4127 24.9569 34.2126C24.9543 33.9202 24.8441 33.6702 24.6261 33.4624C24.4106 33.2547 24.1618 33.1508 23.8797 33.1508C23.5822 33.1508 23.327 33.2547 23.1142 33.4624C22.9038 33.6702 22.8 33.9202 22.8025 34.2126C22.8 34.5127 22.9038 34.7679 23.1142 34.9782ZM26.4996 34.9782C26.7124 35.1859 26.9676 35.2898 27.2651 35.2898C27.4549 35.2898 27.6306 35.2423 27.7922 35.1475C27.9538 35.05 28.0846 34.9205 28.1846 34.7589C28.2872 34.5948 28.3398 34.4127 28.3423 34.2126C28.3398 33.9202 28.2295 33.6702 28.0115 33.4624C27.796 33.2547 27.5473 33.1508 27.2651 33.1508C26.9676 33.1508 26.7124 33.2547 26.4996 33.4624C26.2893 33.6702 26.1854 33.9202 26.188 34.2126C26.1854 34.5127 26.2893 34.7679 26.4996 34.9782Z" fill="#4C3FF2"></path>
+</svg>
+</div>
+<div class="flex items-center w-64">
+<h3 class="leading-4 "><a class="text-sm uppercase" href="tools/word-counter">Word Counter</a></h3>
+</div>
+</div>
+<div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="44" viewBox="0 0 512.000000 512.000000">
+<g xmlns="http://www.w3.org/2000/svg" fill="#4C3FF2" stroke="none" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+<path d="M2440 4604 c-121 -15 -238 -39 -326 -69 -493 -164 -848 -562 -960 -1075 -18 -79 -19 -142 -19 -895 0 -756 1 -816 19 -900 107 -512 466 -916 960 -1080 152 -51 266 -68 446 -69 180 0 294 18 446 69 257 86 474 232 646 435 173 205 282 442 324 710 13 80 14 217 11 875 -4 865 0 814 -73 1035 -96 289 -298 552 -561 728 -146 98 -364 186 -538 217 -90 16 -310 27 -375 19z m326 -219 c173 -30 327 -92 476 -191 228 -152 404 -384 486 -645 58 -180 57 -171 57 -994 0 -698 -1 -767 -18 -843 -74 -336 -255 -607 -527 -787 -207 -138 -429 -205 -680 -205 -251 0 -473 67 -682 206 -270 180 -453 454 -525 787 -16 74 -18 153 -18 847 0 838 -1 825 62 1010 141 417 513 736 948 814 108 19 312 20 421 1z" />
+<path d="M2460 3448 l0 -543 -223 223 -222 222 -68 -68 c-37 -37 -67 -72 -67 -77 0 -6 141 -151 313 -322 204 -204 322 -314 339 -318 16 -4 40 -4 55 0 18 4 136 114 341 318 171 171 312 316 312 322 0 5 -30 40 -67 77 l-68 68 -222 -222 -223 -223 0 543 0 542 -100 0 -100 0 0 -542z" />
+</g>
+</svg>
+</div>
+<div class="flex items-center w-64">
+<h3 class="leading-4 "><a class="text-sm uppercase" href="tools/scrollbar-generator">Scrollbar Generator</a></h3>
+</div>
+</div>
+<div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<svg width="44" height="40" viewBox="0 0 1024 1024" fill="#4C3FF2" xmlns="http://www.w3.org/2000/svg">
+<path d="M469.333333 256c58.88 0 112.213333 23.893333 150.826667 62.506667l-108.16 108.16 256 0 0-256-87.466667 87.466667c-53.973333-53.973333-128.64-87.466667-211.2-87.466667-150.4 0-274.56 111.36-295.253333 256l86.186667 0c19.84-97.28 105.813333-170.666667 209.066667-170.666667zM709.973333 645.76c28.373333-38.613333 47.573333-84.266667 54.613333-133.76l-86.186667 0c-19.84 97.28-105.813333 170.666667-209.066667 170.666667-58.88 0-112.213333-23.893333-150.826667-62.506667l108.16-108.16-256 0 0 256 87.466667-87.466667c53.973333 53.973333 128.64 87.466667 211.2 87.466667 66.133333 0 127.146667-21.76 176.64-58.24l207.36 207.146667 63.573333-63.573333-206.933333-207.573333z" />
+</svg>
+</div>
+<div class="flex items-center w-64">
+<h3 class="leading-4 "><a class="text-sm uppercase" href="tools/find-and-replace-text">Find and Replace Text</a></h3>
+</div>
+</div>
+<div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<svg width="44" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7281 3.88396C17.1624 2.44407 19.2604 2.41383 20.4219 3.57981C21.5856 4.74798 21.5542 6.85922 20.1189 8.30009L17.6951 10.7333C17.4028 11.0268 17.4037 11.5017 17.6971 11.794C17.9906 12.0863 18.4655 12.0854 18.7578 11.7919L21.1816 9.35869C23.0929 7.43998 23.3329 4.37665 21.4846 2.5212C19.6342 0.663551 16.5776 0.905664 14.6653 2.82536L9.81768 7.69182C7.90639 9.61053 7.66643 12.6739 9.5147 14.5293C9.80702 14.8228 10.2819 14.8237 10.5754 14.5314C10.8688 14.2391 10.8697 13.7642 10.5774 13.4707C9.41376 12.3026 9.4451 10.1913 10.8804 8.75042L15.7281 3.88396Z" fill="#4C3FF2" />
+<path opacity="0.5" d="M14.4846 9.4707C14.1923 9.17724 13.7174 9.17632 13.4239 9.46864C13.1305 9.76097 13.1296 10.2358 13.4219 10.5293C14.5856 11.6975 14.5542 13.8087 13.1189 15.2496L8.27129 20.1161C6.83696 21.556 4.73889 21.5862 3.57742 20.4202C2.41376 19.2521 2.4451 17.1408 3.8804 15.6999L6.30424 13.2666C6.59657 12.9732 6.59565 12.4983 6.30219 12.206C6.00873 11.9137 5.53386 11.9146 5.24153 12.208L2.81769 14.6413C0.906387 16.56 0.666428 19.6234 2.5147 21.4788C4.36518 23.3365 7.42173 23.0944 9.334 21.1747L14.1816 16.3082C16.0929 14.3895 16.3329 11.3262 14.4846 9.4707Z" fill="#4C3FF2" />
+</svg>
+</div>
+<div class="flex items-center w-64">
+<h3 class="leading-4 "><a class="text-sm uppercase" href="tools/slug-generator">Slug Generator</a></h3>
+</div>
+</div>
+<div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<svg width="44" height="40" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+<path d="M513.448 310.749h253.47c63.89 0 115.87 51.98 115.87 115.871v170.91c0 63.892-51.98 115.872-115.87 115.872h-253.47c-15.999 0-28.967-12.969-28.967-28.968s12.968-28.968 28.967-28.968h253.47c31.945 0 57.935-25.99 57.935-57.936V426.62c0-31.946-25.99-57.936-57.936-57.936H513.448c-15.999 0-28.967-12.968-28.967-28.967s12.968-28.968 28.967-28.968zM257.083 713.402h26.07c16 0 28.969-12.969 28.969-28.968s-12.97-28.968-28.968-28.968h-26.071c-31.946 0-57.936-25.99-57.936-57.936V426.62c0-31.946 25.99-57.936 57.936-57.936h26.07c16 0 28.969-12.968 28.969-28.967s-12.97-28.968-28.968-28.968h-26.071c-63.892 0-115.872 51.98-115.872 115.871v170.91c0 63.893 51.98 115.872 115.872 115.872z m26.07-514.255c47.92 0 86.904 38.985 86.904 86.904v451.898c0 47.919-38.984 86.904-86.903 86.904-15.999 0-28.968 12.969-28.968 28.968s12.969 28.968 28.968 28.968c47.328 0 89.424-22.82 115.871-58.032 26.448 35.212 68.544 58.032 115.872 58.032 15.999 0 28.968-12.97 28.968-28.968s-12.97-28.968-28.968-28.968c-47.919 0-86.904-38.985-86.904-86.904V286.051c0-47.919 38.985-86.904 86.904-86.904 15.999 0 28.968-12.969 28.968-28.968s-12.97-28.968-28.968-28.968c-47.328 0-89.424 22.82-115.872 58.032-26.447-35.212-68.543-58.032-115.871-58.032-15.999 0-28.968 12.97-28.968 28.968s12.969 28.968 28.968 28.968z" fill="#4C3FF2" />
+</svg>
+</div>
+<div class="flex items-center w-64">
+<h3 class="leading-4 "><a class="text-sm uppercase" href="tools/lorem-ipsum-generator">Lorem Ipsum Generator</a></h3>
+</div>
+</div>
+</div>
+<div class="w-full bg-[#f4f5f8] shadow my-4 p-6 ">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Related Posts</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Create a Stunning Spotify Clone Project with HTML and CSS (Source Code)" src="img/create a stunning spotify clone project with html and css.jpg" alt="create a stunning spotify clone project with html and css.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">May 01, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/147/create-a-stunning-spotify-clone-project-with-html-and-css">Create a Stunning Spotify Clone Project with HTML and...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Create Windows 11 Clone: HTML, CSS, JavaScript Tutorial" src="img/Create Windows 11 Clone HTML, CSS, JavaScript Tutorial.jpg" alt="Create Windows 11 Clone HTML, CSS, JavaScript Tutorial.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">September 08, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/227/create-windows-11-clone-html-css-javascript-tutorial">Create Windows 11 Clone: HTML, CSS, JavaScript Tutorial</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Create a Responsive Blog Card Grid with HTML and CSS" src="img/how to create responsive card grid layout.png" alt="how to create responsive card grid layout.png" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">July 23, 2022</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/18/create-a-responsive-blog-card-grid-with-html-and-css">Create a Responsive Blog Card Grid with HTML and CSS</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Creating Wooden Toggle Buttons Using HTML and CSS (Source Code)" src="img/Creating Wooden Toggle Buttons Using HTML and CSS Source Code.jpg" alt="Creating Wooden Toggle Buttons Using HTML and CSS Source Code.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">January 27, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/319/creating-wooden-toggle-buttons-using-html-and-css-source-code">Creating Wooden Toggle Buttons Using HTML and CSS...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Create a Drag and Drop To-Do List Tutorial (Source Code)" src="img/Create a Drag and Drop To-Do List Tutorial.jpg" alt="Create a Drag and Drop To-Do List Tutorial.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">September 23, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/249/create-a-drag-and-drop-to-do-list-tutorial-source-code">Create a Drag and Drop To-Do List Tutorial (Source...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Create a Responsive Slider with jQuery (Source Code)" src="img/create a responsive slider with jquery (source code).jpg" alt="create a responsive slider with jquery (source code).jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">May 12, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/153/create-a-responsive-slider-with-jquery-source-code">Create a Responsive Slider with jQuery (Source Code)</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Responsive Contact Form Design using HTML, CSS, and JavaScript: Step-by-Step with Source Code" src="img/Responsive Contact Form Design using html, css, and javascript Step-by-Step with Source Code.jpg" alt="Responsive Contact Form Design using html, css, and javascript Step-by-Step with Source Code.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">January 26, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/317/responsive-contact-form-design-using-html-css-and-javascript-step-by-step-with-source-code">Responsive Contact Form Design using HTML, CSS, and...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Develop Your App Landing Page using HTML and CSS (Source Code)" src="img/Develop Your App Landing Page using HTML and CSS.jpg" alt="Develop Your App Landing Page using HTML and CSS.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">January 17, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/312/develop-your-app-landing-page-using-html-and-css-source-code">Develop Your App Landing Page using HTML and CSS...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Responsive Photography Portfolio Website Landing Page Using HTML, CSS, and JavaScript" src="img/responsive photography portfolio website landing page using html, css, and javascript.jpg" alt="responsive photography portfolio website landing page using html, css, and javascript.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">April 08, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/137/responsive-photography-portfolio-website-landing-page-using-html-css-and-javascript">Responsive Photography Portfolio Website Landing Page...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="HTML & CSS Ramadan Kareem 2024: Festive Wishes Tutorial" src="img/HTML & CSS Ramadan Kareem 2024 Festive Wishes Tutorial.webp" alt="HTML & CSS Ramadan Kareem 2024 Festive Wishes Tutorial.webp" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">March 25, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/367/html-css-ramadan-kareem-2024-festive-wishes-tutorial">HTML & CSS Ramadan Kareem 2024: Festive Wishes Tutorial</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Creating a Pulse Effect Animation with HTML and CSS (Source Code)" src="img/Creating a Pulse Effect Animation with HTML and CSS.jpg" alt="Creating a Pulse Effect Animation with HTML and CSS.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">February 04, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/323/creating-a-pulse-effect-animation-with-html-and-css-source-code">Creating a Pulse Effect Animation with HTML and CSS...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;" title="Create a Tyre Fitting Landing Page using HTML, CSS, and JavaScript (Source Code)" src="img/Create a Tyre Fitting Landing Page using HTML, CSS, and JavaScript (Source Code).webp" alt="Create a Tyre Fitting Landing Page using HTML, CSS, and JavaScript (Source Code).webp" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">March 12, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/content/354/create-a-tyre-fitting-landing-page-using-html-css-and-javascript-source-code">Create a Tyre Fitting Landing Page using HTML, CSS, and...</a></h3>
+</div>
+</div></div>
+<style>
+.owl-carousel .owl-item img { height: 100px; width: 100px; object-fit: cover; margin-top:20px;} .amazon-item { position: relative; display: flex; flex-direction: column; justify-content: space-between; max-width: 100px; width: 100%; border: 1px solid #e3e3e3; border-radius: 10px 10px 0px 0px; margin: 10px; padding: 6px; } .item-image{ margin-bottom: 10px; } h4{ font-size:inherit;font-weight:inherit;margin:0; } .amazon-item-name{ font: 700 12px/16px Montserrat, sans-serif; height: 32px; text-align: center; color: #1a1a1a;} .amazon-item::before{ content: attr(data-discount); width: 100%; height: 23px; background-color: red; color: #fff; text-align: center; font-weight: 500; font-size:12px;display: block; position: absolute; left: 0; top: 0; border-radius: 10px 10px 0px 0px; }
+</style>
+<div class="w-full flex flex-col my-4 p-6">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Hot Deals</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div>
+<div id="carousel" class="owl-carousel"><div class="itemgroup"><div class="amazon-item" data-discount="Up to 40% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=877085131d7bdbb20e7945c65ecbfed8&camp=3638&creative=24630&node=1375424031" target="_blank">
+<div class="item-image">
+<img src="product_img/Laptops.jpg" title="Laptops" alt="Laptops">
+</div>
+<div class="amazon-item-name">
+<h4>Laptops</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 45% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=36c1009c1e85dd4124c7fa981506903a&camp=3638&creative=24630&node=1375392031" target="_blank">
+<div class="item-image">
+<img src="product_img/Computers.jpg" title="Desktops" alt="Desktops">
+</div>
+<div class="amazon-item-name">
+<h4>Desktops</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 75% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=8ec662b256948deeb6cd9637fc3272e2&camp=3638&creative=24630&node=3561110031" target="_blank">
+<div class="item-image">
+<img src="product_img/Mobile Phones.jpg" title="Mobiles" alt="Mobiles">
+</div>
+<div class="amazon-item-name">
+<h4>Mobiles</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 50% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=790b7119662004e538df8122bee07889&camp=3638&creative=24630&node=14784019031" target="_blank">
+<div class="item-image">
+<img src="product_img/Printers.jpg" title="Printers" alt="Printers">
+</div>
+<div class="amazon-item-name">
+<h4>Printers</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 80% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=bb3a520f4aeb8649b016df8d1a47adb8&camp=3638&creative=24630&node=1375248031" target="_blank">
+<div class="item-image">
+<img src="product_img/Computers Accessories.jpg" title="Computers Accessories" alt="Computers Accessories">
+</div>
+<div class="amazon-item-name">
+<h4>Computers Accessories</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 60% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=d9a4516088f30bc93564991c893f60bc&camp=3638&creative=24630&node=4951860031" target="_blank">
+<div class="item-image">
+<img src="product_img/Kitchen Products.jpg" title="Kitchen Products" alt="Kitchen Products">
+</div>
+<div class="amazon-item-name">
+<h4>Kitchen Products</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 50% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=1b3dfb174d5d6e6ec85c7f3ec8f12ee2&camp=3638&creative=24630&node=1318105031" target="_blank">
+<div class="item-image">
+<img src="product_img/Programming Books.jpg" title="Programming Books" alt="Programming Books">
+</div>
+<div class="amazon-item-name">
+<h4>Programming Books</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 60% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=905690ea9ba6e56087057a552ce72a6b&camp=3638&creative=24630&node=976460031" target="_blank">
+<div class="item-image">
+<img src="product_img/Video Games.jpg" title="Video Games" alt="Video Games">
+</div>
+<div class="amazon-item-name">
+<h4>Video Games</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 80% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=79fa04b5ce504829fae7ea3ec31f479a&camp=3638&creative=24630&node=976419031" target="_blank">
+<div class="item-image">
+<img src="product_img/Electronics Products.jpg" title="Electronic Products" alt="Electronic Products">
+</div>
+<div class="amazon-item-name">
+<h4>Electronic Products</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 84% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=58da7e983a5ce099ce9b503414aebc00&camp=3638&creative=24630&node=1571271031" target="_blank">
+<div class="item-image">
+<img src="product_img/Clothing & Accessories.jpg" title="Clothing & Accessories" alt="Clothing & Accessories">
+</div>
+<div class="amazon-item-name">
+<h4>Clothing & Accessories</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 72% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=c6bad15e88f19119ba5df2da4f2902a0&camp=3638&creative=24630&node=1388921031" target="_blank">
+<div class="item-image">
+<img src="product_img/Headphones.jpg" title="Headphones" alt="Headphones">
+</div>
+<div class="amazon-item-name">
+<h4>Headphones</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 60% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=7cbc2de9ec602eea04cbea9be862176e&camp=3638&creative=24630&node=1350387031" target="_blank">
+<div class="item-image">
+<img src="product_img/Smart Watches.jpg" title="Smart Watches" alt="Smart Watches">
+</div>
+<div class="amazon-item-name">
+<h4>Smart Watches</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 45% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=55fca5a86b4bb9f6e411930c56df1360&camp=3638&creative=24630&node=1389221031" target="_blank">
+<div class="item-image">
+<img src="product_img/Car Accessories.jpg" title="Car Accessories" alt="Car Accessories">
+</div>
+<div class="amazon-item-name">
+<h4>Car Accessories</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 53% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=f24651dbe09ca05dfda33c404ebd7123&camp=3638&creative=24630&node=1374494031" target="_blank">
+<div class="item-image">
+<img src="product_img/Health Care.jpg" title="Health Care" alt="Health Care">
+</div>
+<div class="amazon-item-name">
+<h4>Health Care</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 70% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=ce86fb6c259be31540fa13ce162acfd0&camp=3638&creative=24630&node=1374450031" target="_blank">
+<div class="item-image">
+<img src="product_img/Beauty Products.jpg" title="Beauty Products" alt="Beauty Products">
+</div>
+<div class="amazon-item-name">
+<h4>Beauty Products</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 80% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=fd3a349e83504c4b3e3829df8c0fa315&camp=3638&creative=24630&node=1350380031" target="_blank">
+<div class="item-image">
+<img src="product_img/Toys.jpg" title="Toys" alt="Toys">
+</div>
+<div class="amazon-item-name">
+<h4>Toys</h4>
+</div></a></div></div><div class="itemgroup"><div class="amazon-item" data-discount="Up to 80% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=3e38768970e652d74c0f93da98ac9f5d&camp=3638&creative=24630&node=1984443031" target="_blank">
+<div class="item-image">
+<img src="product_img/Sports and Outdoors.jpg" title="Sports & Outdoors" alt="Sports & Outdoors">
+</div>
+<div class="amazon-item-name">
+<h4>Sports & Outdoors</h4>
+</div></a></div> <div class="amazon-item" data-discount="Up to 50% Off">
+<a href="https://www.amazon.in/b?_encoding=UTF8&tag=600807-21&linkCode=ur2&linkId=53923932ed1f1f2ef761148e938bd9f8&camp=3638&creative=24630&node=1380441031" target="_blank">
+<div class="item-image">
+<img src="product_img/Furniture Product.jpg" title="Furniture" alt="Furniture">
+</div>
+<div class="amazon-item-name">
+<h4>Furniture</h4>
+</div></a></div></div></div>
+</div>
+<div class="w-full bg-[#f4f5f8] shadow flex flex-col my-4 p-6">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Categories</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div>
+<ul class="grid gap-3" style="list-style: none;"><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Accordion">Accordion <span class="text-gray-400">(3)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Product">Product <span class="text-gray-400">(10)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Search Bar">Search Bar <span class="text-gray-400">(3)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Modal">Modal <span class="text-gray-400">(2)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Password">Password <span class="text-gray-400">(2)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Text">Text <span class="text-gray-400">(17)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Copy to Clipboard">Copy to Clipboard <span class="text-gray-400">(2)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Tailwind">Tailwind <span class="text-gray-400">(18)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=C Sharp">C Sharp <span class="text-gray-400">(0)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Tooltips">Tooltips <span class="text-gray-400">(2)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Landing Page">Landing Page <span class="text-gray-400">(48)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Clock">Clock <span class="text-gray-400">(9)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Tab Bar">Tab Bar <span class="text-gray-400">(3)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Cursor">Cursor <span class="text-gray-400">(1)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=UI">UI <span class="text-gray-400">(158)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Rating">Rating <span class="text-gray-400">(9)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Marquee">Marquee <span class="text-gray-400">(1)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Form">Form <span class="text-gray-400">(36)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Animation">Animation <span class="text-gray-400">(56)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=App">App <span class="text-gray-400">(31)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Context Menu">Context Menu <span class="text-gray-400">(1)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Neobrutalism">Neobrutalism <span class="text-gray-400">(3)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Sort Table">Sort Table <span class="text-gray-400">(1)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Pricing Table">Pricing Table <span class="text-gray-400">(3)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li><li class="text-gray-500 hover:text-gray-900 relative">
+<a href="category?tags=Checkout Form">Checkout Form <span class="text-gray-400">(1)</span>
+<i class="fas fa-chevron-right absolute right-0"></i></a></li></ul>
+</div>
+<div class="Showads relative w-full bg-[#f4f5f8] shadow my-4 p-2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3303804766726108" data-ad-slot="9491334527" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="bg-[#f4f5f8] shadow my-4 p-6">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Tags</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div><a href="category?tags=fun project" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">fun project</a><a href="category?tags=neumorphism" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">neumorphism</a><a href="category?tags=checkbox" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">checkbox</a><a href="category?tags=input" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">input</a><a href="category?tags=label" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">label</a><a href="category?tags=ui design" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">ui design</a><a href="category?tags=audio" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">audio</a><a href="category?tags=tetris" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">tetris</a><a href="category?tags=styling" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">styling</a><a href="category?tags=recipe book" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">recipe book</a><a href="category?tags=JavaScript" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">JavaScript</a><a href="category?tags=html" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">html</a><a href="category?tags=engagement" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">engagement</a><a href="category?tags=css" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">css</a><a href="category?tags=javascript" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">javascript</a><a href="category?tags=bootstrap 5" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">bootstrap 5</a><a href="category?tags=web design" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">web design</a><a href="category?tags=programming" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">programming</a><a href="category?tags=footer" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">footer</a><a href="category?tags=learn html" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">learn html</a><a href="category?tags=HTML" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">HTML</a><a href="category?tags=carousel" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">carousel</a><a href="category?tags=games" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">games</a><a href="category?tags=tutorial" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">tutorial</a><a href="category?tags=CSS" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">CSS</a><a href="category?tags=marquee" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">marquee</a><a href="category?tags=weather app" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">weather app</a><a href="category?tags=coding" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">coding</a><a href="category?tags=source code" class="inline-block bg-white text-gray-500 py-2 px-3 mb-1 mr-1 rounded hover:bg-[#e62739] hover:text-white">source code</a></div>
+<div class="w-full bg-[#f4f5f8] flex justify-center shadow my-4 p-6">
+<input class="searchInput w-5/6 inline-block border-none outline-none box-border h-12 p-5 sm:text-sm sm:leading-5 placeholder-gray-400" type="text" placeholder="Search..." />
+<button id="searchSide" class="flex justify-center items-center text-xl h-12 w-12 box-border bg-blue-700" aria-label="Search Button"><i class="fas fa-search text-white"></i></button>
+</div><div class="w-full bg-[#f4f5f8] shadow my-4 p-6 ">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Python Projects</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="Restaurant Management System in Python with Tkinter (Source Code)" src="img/Restaurant Management System in Python with Tkinter.jpg" alt="Restaurant Management System in Python with Tkinter.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">June 03, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/python/13/restaurant-management-system-in-python-with-tkinter-source-code">Restaurant Management System in Python with Tkinter...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="Create Your Own Vending Machine with Python (Source Code)" src="img/Python Vending Machine.jpg" alt="Python Vending Machine.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">May 16, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/python/1/create-your-own-vending-machine-with-python-source-code">Create Your Own Vending Machine with Python (Source...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="Python Snake Game Tutorial for Beginners using Tkinter (Source Code)" src="img/Python Snake Game Tutorial for Beginners using Tkinter.jpg" alt="Python Snake Game Tutorial for Beginners using Tkinter.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">October 01, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/python/21/python-snake-game-tutorial-for-beginners-using-tkinter">Python Snake Game Tutorial for Beginners using Tkinter...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="Create a Task Management System in Python with Tkinter" src="img/Create a Task Management System in Python with Tkinter.jpg" alt="Create a Task Management System in Python with Tkinter.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">June 15, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/python/17/create-a-task-management-system-in-python-with-tkinter">Create a Task Management System in Python with Tkinter</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="Create a Paint Application in Python using Tkinter" src="img/Paint App in Python using Tkinter.jpg" alt="Paint App in Python using Tkinter.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">June 07, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/python/14/create-a-paint-application-in-python-using-tkinter">Create a Paint Application in Python using Tkinter</a></h3>
+</div>
+</div></div><div class="w-full bg-[#f4f5f8] shadow my-4 p-6 ">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Free Icons</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px;" title="300+ Most Used Free SVG Icons - Electronics, Direction, Devices, and More!" src="img/300 Most Used Free SVG Icons Electronics, Direction, Devices, and More.jpg" alt="300 Most Used Free SVG Icons Electronics, Direction, Devices, and More.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">August 05, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/icons/1/300-most-used-free-svg-icons-alarm-direction-devices-and-more">300+ Most Used Free SVG Icons - Electronics, Direction,...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px;" title="Get High-Quality SVG Icons of Car Brands Logos for Free" src="img/Get High-Quality SVG Icons of Car Brands Logos for Free.jpg" alt="Get High-Quality SVG Icons of Car Brands Logos for Free.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">August 05, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/icons/2/get-high-quality-svg-icons-of-car-brands-logos-for-free">Get High-Quality SVG Icons of Car Brands Logos for Free</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px;" title="Emoji Copy and Paste: Expressive Emoticons for Every Mood | Copyable Emojis" src="img/Emoji Copy and Paste Expressive Emoticons for Every Mood  Copyable Emojis.jpg" alt="Emoji Copy and Paste Expressive Emoticons for Every Mood  Copyable Emojis.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">August 05, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/icons/3/emoji-copy-and-paste-expressive-emoticons-for-every-mood-copyable-emojis">Emoji Copy and Paste: Expressive Emoticons for Every...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px;" title="Free Download SVG Icons: Bootstrap Icons Collection - Instagram, Facebook, WhatsApp, Twitter, Google, and More" src="img/Free Download SVG Icons Bootstrap Icons Collection - Instagram, Facebook, WhatsApp, Twitter, Google.jpg" alt="Free Download SVG Icons Bootstrap Icons Collection - Instagram, Facebook, WhatsApp, Twitter, Google.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">August 17, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/icons/4/free-download-svg-icons-bootstrap-icons-collection-instagram-facebook-whatsapp-twitter-google-and-more">Free Download SVG Icons: Bootstrap Icons Collection -...</a></h3>
+</div>
+</div></div><div class="bg-[#f4f5f8] shadow flex flex-col my-4 p-6">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Instagram</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<img class="hover:opacity-75" src="img/code with Faraz-1.jpg" alt="Responsive Sidebar Menu" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-6.jpg" alt="Front-End Web Development Projects for Beginners" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-2.jpg" alt="Pure CSS Responsive Footer" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-7.jpg" alt="Useful Websites for Front-End Developers" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-3.jpg" alt="Pure CSS Responsive Navbar" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-8.jpg" alt="Best Coding Games to Build Your Programming Skills" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-4.jpg" alt="Simple Countdown Timer" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-9.jpg" alt="Best Code Snippet Website for Developer" loading="lazy">
+<img class="hover:opacity-75" src="img/code with Faraz-5.jpg" alt="Single Element Slack Loader" loading="lazy">
+</div>
+<a href="https://www.instagram.com/codewithfaraz" class="w-full bg-blue-700 text-[#ffffff] font-medium text-sm rounded hover:bg-blue-600 flex items-center justify-center px-2 py-3 mt-6">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+</svg>&nbsp;Follow @codewithfaraz
+</a>
+</div><div class="w-full bg-[#f4f5f8] shadow my-4 p-6 ">
+<div class="relative w-fit">
+<h3 class="text-xl font-medium pb-5 uppercase">Popular Blogs</h3>
+<svg class="svgCurve absolute top-2 left-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+<path class="stroke-[#e62739] stroke-[5px]" d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="30 Free Landing Page Templates - HTML, CSS, and JavaScript" src="img/30+ Free Landing Page Templates - HTML, CSS, and JavaScript.jpg" alt="30+ Free Landing Page Templates - HTML, CSS, and JavaScript.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">January 30, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/article/127/30-free-landing-page-templates-html-css-and-javascript">30 Free Landing Page Templates - HTML, CSS, and...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="Collection of 100 HTML and CSS Mini Projects for Beginners with Source Code" src="img/Collection of 100 HTML and CSS Mini Projects for Beginners with Source Code.jpg" alt="Collection of 100 HTML and CSS Mini Projects for Beginners with Source Code.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">February 12, 2024</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/article/128/collection-of-100-html-and-css-mini-projects-for-beginners-with-source-code">Collection of 100 HTML and CSS Mini Projects for...</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="15+ Inspiring React Portfolio Templates for 2023" src="img/15+ Inspiring React Portfolio Templates for 2023.jpg" alt="15+ Inspiring React Portfolio Templates for 2023.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">September 29, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/article/107/15-inspiring-react-portfolio-templates-for-2023">15+ Inspiring React Portfolio Templates for 2023</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="A Comprehensive List of HTML Tags for Web Development" src="img/a comprehensive list of html tags for web development.png" alt="a comprehensive list of html tags for web development.png" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">November 13, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/article/79/a-comprehensive-list-of-html-tags-for-web-development">A Comprehensive List of HTML Tags for Web Development</a></h3>
+</div>
+</div><div class="flex flex-wrap w-full pb-5">
+<div class="mr-4">
+<img style="width:70px;height:70px" title="20+ Inspiring Gym Websites: HTML, CSS, and JavaScript in 2023" src="img/20+ Inspiring Gym Websites HTML, CSS, and JavaScript in 2023.jpg" alt="20+ Inspiring Gym Websites HTML, CSS, and JavaScript in 2023.jpg" loading="lazy">
+</div>
+<div class="resentpost-body w-64">
+<time class="postdate">
+<span class="dateone text-gray-500 font-semibold text-xs">October 06, 2023</span>
+</time>
+
+<h3 class="leading-4 "><a class="text-sm uppercase" href="https://www.codewithfaraz.com/article/110/20-inspiring-gym-websites-html-css-and-javascript-in-2023">20+ Inspiring Gym Websites: HTML, CSS, and JavaScript...</a></h3>
+</div>
+</div></div><div class="Showads relative w-full bg-[#f4f5f8] shadow my-4 p-2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3303804766726108" data-ad-slot="9491334527" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</aside> </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3303804766726108" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-ef+6k-30-ac+ty" data-ad-client="ca-pub-3303804766726108" data-ad-slot="5415276573"></ins>
+<script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+
+<footer class="darkFooter bg-gray-900">
+<div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+<div class="lg:flex lg:items-start lg:gap-8">
+<img src="InstaPic.png" class="mr-3 h-10 w-auto" alt="CodewithFaraz Footer Logo">
+<div class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+<div class="col-span-2">
+<div>
+<h2 class="text-2xl font-bold text-white">Get the latest news!</h2>
+<p class="mt-4 text-gray-400">
+Don't be shy. Say hi 👋. Do you have a project or an idea that could use some help? Let's work together.
+</p>
+</div>
+</div>
+<div class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
+<form class="w-full">
+<div class="relative max-w-lg">
+<label class="sr-only" for="footeremail"> Email </label>
+<input class="w-full rounded-full border-gray-200 outline-none bg-gray-100 p-4 pe-32 text-sm font-medium" id="footeremail" type="email" placeholder="user@codewithfaraz.com" />
+<button type="submit" id="footersubsbtn" class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700">
+Subscribe
+</button>
+</div>
+<h4 id="footerMsg" class="mt-2 mx-auto text-sm font-medium text-red-600"></h4>
+</form>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<p class="relative font-medium text-white footer-heading">Quick Links</p>
+<ul style="list-style:none;" class="mt-6 space-y-4 text-sm">
+<li>
+<a href="https://www.codewithfaraz.com" class="transition hover:opacity-75 text-gray-200">
+Home
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/about-us" class="transition hover:opacity-75 text-gray-200">
+About Us
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/blog" class="transition hover:opacity-75 text-gray-200">
+Blogs
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/contact" class="transition hover:opacity-75 text-gray-200">
+Contact Us
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/write-for-us" class="transition hover:opacity-75 text-gray-200">
+Write For Us
+</a>
+</li>
+</ul>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<p class="relative font-medium text-white footer-heading">Components</p>
+<ul style="list-style:none;" class="mt-6 space-y-4 text-sm">
+<li>
+<a href="https://www.codewithfaraz.com/components" class="transition hover:opacity-75 text-gray-200">
+HTML, CSS, and JS
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/python-projects" class="transition hover:opacity-75 text-gray-200">
+Python
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/csharp-projects" class="transition hover:opacity-75 text-gray-200">
+C#
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/questions" class="transition hover:opacity-75 text-gray-200">
+Questions
+</a>
+</li>
+</ul>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<p class="relative font-medium text-white footer-heading">Useful Tools</p>
+<ul style="list-style:none;" class="mt-6 space-y-4 text-sm">
+<li>
+<a href="https://www.codewithfaraz.com/tools/case-converter" class="transition hover:opacity-75 text-gray-200">
+Case Converter
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/tools/word-counter" class="transition hover:opacity-75 text-gray-200">
+Word Counter
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/tools/scrollbar-generator" class="transition hover:opacity-75 text-gray-200">
+Slug Generator
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/tools" class="transition hover:opacity-75 text-[#377DFF]">
+View More
+</a>
+</li>
+</ul>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<p class="relative font-medium text-white footer-heading">Free Icons</p>
+<ul style="list-style:none;" class="mt-6 space-y-4 text-sm">
+<li>
+<a href="https://www.codewithfaraz.com/icons/1/300-most-used-free-svg-icons-alarm-direction-devices-and-more" class="transition hover:opacity-75 text-gray-200">
+SVG
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/icons/2/get-high-quality-svg-icons-of-car-brands-logos-for-free" class="transition hover:opacity-75 text-gray-200">
+Car SVG
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/icons/3/emoji-copy-and-paste-expressive-emoticons-for-every-mood-copyable-emojis" class="transition hover:opacity-75 text-gray-200">
+Emojis
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/icons" class="transition hover:opacity-75 text-[#377DFF]">
+View More
+</a>
+</li>
+</ul>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<p class="relative font-medium text-white footer-heading">Category</p>
+<ul style="list-style:none;" class="mt-6 space-y-4 text-sm">
+<li>
+<a href="https://www.codewithfaraz.com/category?tags=App" class="transition hover:opacity-75 text-gray-200">
+App
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/category?tags=Form" class="transition hover:opacity-75 text-gray-200">
+Form
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/category?tags=Navbar" class="transition hover:opacity-75 text-gray-200">
+Navbar
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/category?tags=Landing%20Page" class="transition hover:opacity-75 text-gray-200">
+Landing Page
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/category" class="transition hover:opacity-75 text-[#377DFF]">
+View More
+</a>
+</li>
+</ul>
+</div>
+<ul style="list-style:none;" class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
+<li>
+<a href="https://www.facebook.com/codewithfaraz" rel="noreferrer" target="_blank" class="transition hover:text-[#1877F2] text-gray-200">
+<span class="sr-only">Facebook</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/codewithfaraz" rel="noreferrer" target="_blank" class="transition hover:text-[#E4405F] text-gray-200">
+<span class="sr-only">Instagram</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/codewithfaraz" rel="noreferrer" target="_blank" class="transition twitter-color text-gray-200">
+<span class="sr-only">Twitter</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://github.com/farazc60" rel="noreferrer" target="_blank" class="transition hover:text-[#333333] text-gray-200">
+<span class="sr-only">GitHub</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+</svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/@codewithfaraz" rel="noreferrer" target="_blank" class="transition hoverRed text-gray-200">
+<span class="sr-only">YouTube</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+<path fill-rule="evenodd" d="M21.034 7.382c-.197-.738-.781-1.322-1.52-1.518C17.408 5 12 5 12 5s-5.408 0-7.514.864c-.739.197-1.323.78-1.52 1.518C2 9.488 2 12 2 12s0 2.512.966 4.618c.197.738.781 1.322 1.52 1.518C6.592 19 12 19 12 19s5.408 0 7.514-.864c.739-.197 1.323-.78 1.52-1.518C22 14.512 22 12 22 12s0-2.512-.966-4.618zM10 15V9l5 3-5 3z" clip-rule="evenodd" />
+</svg>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t pt-8 border-gray-800">
+<div class="sm:flex sm:justify-between">
+<p class="text-xs text-gray-400">
+&copy; 2024. codewithFaraz. All rights reserved.
+</p>
+<ul style="list-style:none;" class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+<li>
+<a href="https://www.codewithfaraz.com/terms-and-conditions" class="transition hover:opacity-75 text-gray-400">
+Terms & Conditions
+</a>
+</li>
+<li>
+<a href="https://www.codewithfaraz.com/privacy-policy" class="transition hover:opacity-75 text-gray-400">
+Privacy Policy
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<div class="progress-wrap">
+<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+</svg>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="owl_carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://www.codewithfaraz.com/script.js?v=0.36"></script>
+<script type="text/javascript" src="../src/js/ResizeSensor.js?v=0.2"></script>
+<script type="text/javascript" src="../src/js/sticky-sidebar.js?v=0.3"></script>
+<script src="prism/prism.js?v=0.2"></script>
+<script type="text/javascript">
+        let ref = 27;
+        let type = 'component';
+
+        function myFunction(x) {
+            var contentId = document.getElementById("contentId");
+            if (x.matches) { // If media query matches
+                contentId.classList.remove('flex-wrap');
+            } else {
+                contentId.classList.add('flex-wrap');
+            }
+        }
+        var x = window.matchMedia("(min-width: 1024px)")
+        myFunction(x)
+        x.addListener(myFunction);
+    </script>
+</body>
+</html>
